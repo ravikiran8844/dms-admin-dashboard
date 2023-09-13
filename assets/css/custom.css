@@ -2,7 +2,7 @@
 
 body{
     font-family: Inter;
-    background: #F5F6F6 !important;
+    background: #F5F6F6;
 }
 .page-main-heading{
     color: #313131;
@@ -267,6 +267,10 @@ background: #FFF;
     font-weight: 500;
     line-height: 100%; /* 12px */
 }
+.custom-drop-down-checkboxes{
+    padding: 20px;
+    width: max-content;
+}
 .custom-btn-border{
     border-radius: 9px;
     border: 1px solid #E3E3E3;
@@ -330,4 +334,25 @@ table.dataTable a img{
     border: 1px solid #5E5E5E;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.custom-drop-down-checkboxes li a{
+    color: #7E7E7E;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.card-date-text{
+    color: #ABABAB;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.dropdown-menu{
+    width: max-content;
 }

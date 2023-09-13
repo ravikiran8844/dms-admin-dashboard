@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Otika - Admin Dashboard Template</title>
+  <title>Emerald DMS Dashboard</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
   <!-- Template CSS -->
@@ -440,7 +440,7 @@
 
             <div class="row">
               <div class="col-12 mb-4">
-                <div class="d-flex justify-content-between align-items-center w-100">
+                <div class="d-flex flex-wrap  justify-content-between align-items-center w-100">
                     <div class="search_bar">
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -462,7 +462,46 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="d-flex flex-wrap align-items-center ">
+
+                        <div class="button-group custom-btn-border bg-transparent">
+                          <button type="button" class="btn btn-default btn-sm dropdown-toggle  bg-transparent" data-toggle="dropdown">Designation Type <span class=" caret"></span></button>
+                          <ul id="designation-type" class="dropdown-menu custom-drop-down-checkboxes">
+                            <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 1</a></li>
+                            <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 2</a></li>
+                            <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 3</a></li>
+                            <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 4</a></li>
+                            <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 5</a></li>
+                            <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 6</a></li>
+                          </ul>
+                        </div>
+
+
+                        <div class="button-group custom-btn-border bg-transparent">
+                          <button type="button" class="btn btn-default btn-sm dropdown-toggle  bg-transparent" data-toggle="dropdown">Order Delay <span class=" caret"></span></button>
+                          <ul id="order-delay" class="dropdown-menu custom-drop-down-checkboxes">
+                            <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 1</a></li>
+                            <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 2</a></li>
+                            <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 3</a></li>
+                            <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 4</a></li>
+                            <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 5</a></li>
+                            <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 6</a></li>
+                          </ul>
+                        </div>
+
+
+                        <div class="button-group custom-btn-border bg-transparent">
+                          <button type="button" class="btn btn-default btn-sm dropdown-toggle  bg-transparent" data-toggle="dropdown">Lifting Pending <span class=" caret"></span></button>
+                          <ul id="lifting-pending" class="dropdown-menu custom-drop-down-checkboxes">
+                            <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 1</a></li>
+                            <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 2</a></li>
+                            <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 3</a></li>
+                            <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 4</a></li>
+                            <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 5</a></li>
+                            <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 6</a></li>
+                          </ul>
+                        </div>
+
                         <div>
                             <a href="#" class="btn btn-success"><i class="fas fa-plus-circle"></i> Add Stackholder</a>
                         </div>
@@ -482,6 +521,7 @@
                         <!-- <div>
                             <button class="ml-2 btn btn-outline-secondary"><i data-feather="more-vertical"></i></button>
                         </div> -->
+                        
                         <div class="ml-3 dropdown custom-dropdown show">
                             <div class="btn btn-sm sharp tp-btn" data-toggle="dropdown" aria-expanded="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
@@ -848,97 +888,7 @@
 
           
         </section>
-        <div class="settingSidebar">
-          <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
-          </a>
-          <div class="settingSidebar-body ps-container ps-theme-default">
-            <div class=" fade show active">
-              <div class="setting-panel-header">Setting Panel
-              </div>
-              <div class="p-15 border-bottom">
-                <h6 class="font-medium m-b-10">Select Layout</h6>
-                <div class="selectgroup layout-color w-50">
-                  <label class="selectgroup-item">
-                    <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked>
-                    <span class="selectgroup-button">Light</span>
-                  </label>
-                  <label class="selectgroup-item">
-                    <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout">
-                    <span class="selectgroup-button">Dark</span>
-                  </label>
-                </div>
-              </div>
-              <div class="p-15 border-bottom">
-                <h6 class="font-medium m-b-10">Sidebar Color</h6>
-                <div class="selectgroup selectgroup-pills sidebar-color">
-                  <label class="selectgroup-item">
-                    <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar">
-                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
-                      data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
-                  </label>
-                  <label class="selectgroup-item">
-                    <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked>
-                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
-                      data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
-                  </label>
-                </div>
-              </div>
-              <div class="p-15 border-bottom">
-                <h6 class="font-medium m-b-10">Color Theme</h6>
-                <div class="theme-setting-options">
-                  <ul class="choose-theme list-unstyled mb-0">
-                    <li title="white" class="active">
-                      <div class="white"></div>
-                    </li>
-                    <li title="cyan">
-                      <div class="cyan"></div>
-                    </li>
-                    <li title="black">
-                      <div class="black"></div>
-                    </li>
-                    <li title="purple">
-                      <div class="purple"></div>
-                    </li>
-                    <li title="orange">
-                      <div class="orange"></div>
-                    </li>
-                    <li title="green">
-                      <div class="green"></div>
-                    </li>
-                    <li title="red">
-                      <div class="red"></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="p-15 border-bottom">
-                <div class="theme-setting-options">
-                  <label class="m-b-0">
-                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
-                      id="mini_sidebar_setting">
-                    <span class="custom-switch-indicator"></span>
-                    <span class="control-label p-l-10">Mini Sidebar</span>
-                  </label>
-                </div>
-              </div>
-              <div class="p-15 border-bottom">
-                <div class="theme-setting-options">
-                  <label class="m-b-0">
-                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
-                      id="sticky_header_setting">
-                    <span class="custom-switch-indicator"></span>
-                    <span class="control-label p-l-10">Sticky Header</span>
-                  </label>
-                </div>
-              </div>
-              <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
-                <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme">
-                  <i class="fas fa-undo"></i> Restore Default
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
       <footer class="main-footer">
           
@@ -965,6 +915,76 @@
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+
+
+
+
+  <script>
+    let designationTypes = [];
+
+$( '#designation-type a' ).on( 'click', function( event ) {
+   let $target = $( event.currentTarget ),
+       val = $target.attr( 'data-value' ),
+       $inp = $target.find( 'input' ),
+       idx;
+   if ( ( idx = designationTypes.indexOf( val ) ) > -1 ) {
+    designationTypes.splice( idx, 1 );
+      setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
+   } else {
+    designationTypes.push( val );
+      setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
+   }
+   $( event.target ).blur();      
+   console.log( `Designation Types: ${designationTypes}` );
+   return false;
+});
+
+
+
+
+
+let orderDelay = [];
+
+$( '#order-delay a' ).on( 'click', function( event ) {
+   let $target = $( event.currentTarget ),
+       val = $target.attr( 'data-value' ),
+       $inp = $target.find( 'input' ),
+       idx;
+   if ( ( idx = orderDelay.indexOf( val ) ) > -1 ) {
+    orderDelay.splice( idx, 1 );
+      setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
+   } else {
+    orderDelay.push( val );
+      setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
+   }
+   $( event.target ).blur();      
+   console.log( `Order Delay: ${orderDelay}` );
+   return false;
+});
+
+
+
+let liftingPending = [];
+
+$( '#lifting-pending a' ).on( 'click', function( event ) {
+   let $target = $( event.currentTarget ),
+       val = $target.attr( 'data-value' ),
+       $inp = $target.find( 'input' ),
+       idx;
+   if ( ( idx = liftingPending.indexOf( val ) ) > -1 ) {
+    liftingPending.splice( idx, 1 );
+      setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
+   } else {
+    liftingPending.push( val );
+      setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
+   }
+   $( event.target ).blur();      
+   console.log( `Lifting Pending: ${liftingPending}` );
+   return false;
+});
+
+
+  </script>
 </body>
 
 
