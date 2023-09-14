@@ -360,8 +360,28 @@ line-height: normal;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .avatar-tooltip-images_wrapper img{
-    width: 40px;
-    height: 40px;
+    max-width: 32px;
+    max-height: 32px;
+}
+.avatar-text-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 10.779px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.801%; /* 13.344px */
+}
+.theme-white .navbar{
+    height: max-content;
+}
+.navbar {
+    justify-content: flex-end;
 }
