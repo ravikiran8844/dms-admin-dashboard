@@ -356,3 +356,12 @@ line-height: normal;
 .dropdown-menu{
     width: max-content;
 }
+.avatar-tooltip-images_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar-tooltip-images_wrapper img{
+    width: 40px;
+    height: 40px;
+}
