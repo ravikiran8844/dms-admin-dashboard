@@ -12,6 +12,9 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/bundles/dropzonejs/dropzone.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
@@ -424,250 +427,235 @@
       </div>
       <!-- Main Content -->
       <div class="main-content">
-        <section class="section container">
+        <section class="section">
 
           <div class="row">
-            <div class="col-12 mb-4 px-4">
+            <div class="col-12 px-4">
                 <div class="h2 page-main-heading">Dealer Details</div>
                 <div>KYC (Know Your Customer) for New Customers </div>
             </div>
           </div>
 
         <div class="row">
-          <div class="col-12 p-4 m-auto custom-form">
+          <div class="col-12 p-4 m-auto">
            
             <div class="custom-nav-tabs">
-              <ul class="nav nav-pills" id="myTabNew" role="tablist">
+              <ul class="nav nav-pills bg-white px-3" id="myTabNew" role="tablist">
                   <li class="nav-item">
-                      <a class="nav-link active" id="tab1" href="#content1" role="tab" aria-controls="content1" aria-selected="true" disabled>KYC For New Customers</a>
+                      <a class="nav-link active py-4" id="tab1" href="#content1" role="tab" aria-controls="content1" aria-selected="true" disabled>Project Details</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" id="tab2" href="#content2" role="tab" aria-controls="content2" aria-selected="false" disabled>For Orders</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" id="tab3" href="#content3" role="tab" aria-controls="content3" aria-selected="false" disabled>Bank details</a>
+                      <a class="nav-link py-4" id="tab2" href="#content2" role="tab" aria-controls="content2" aria-selected="false" disabled>Choose Category</a>
                   </li>
               </ul>
+
               <div class="tab-content" id="myTabContentNew">
                   <div class="tab-pane fade active show" id="content1" role="tabpanel" aria-labelledby="tab1">
-                    
                     <div class="my-5">
 
-                     
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Company Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                    <div class="row add-new-projects_wrapper">
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Communication /
-                          Delivery Address<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div class="col-12 col-lg-6 card">
+
+                            
+
+                            <div class="card-body text-dark">
+
+                                <div class="py-3">
+                                    <div class="row file-upload_wrapper">
+                                        <div class="col-4 logo-wrapper d-flex justify-content-center align-items-center ">
+                                            <div class="h5">Logo</div>
+                                        </div>
+                                        <div class="col-8 px-0 file-uploader_container">
+                                            <form action="#" class="dropzone dz-clickable" id="mydropzone">
+                      
+                                                <div class="dz-default dz-message"><span>Drag & drop to change logo</span></div></form>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="">Project Name<span class="required">*</span></label>
+                                    <input class="text-dark form-control" type="text" placeholder="Project Name">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="">Website URL</label>
+                                    <input placeholder="URL" class="text-dark form-control" type="text">
+                                </div>
+
+                                <div  class="mb-4">
+                                    <label for="">Location<span class="required">*</span></label>
+                                    <input class="text-dark form-control" type="text" placeholder="City, District">
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-6 card bg-transparent ">
+
+                            
+
+                            <div class="card-body text-dark">
 
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Land Line No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                                <div class="mb-4">
+                                    <label for="">Project Starting Date<span class="required">*</span></label>
+                                    <input class="form-control bg-transparent " type="date" name="" id="">
+                                </div>
 
+                                <div class="mb-4">
+                                    <label for="">Project Type</label>
+                                    <select class="form-control bg-transparent" name="" id="">
+                                    <option selected disabled value="">Project Type</option>
+                                    <option value="">option 1</option>
+                                    <option value="">option 2</option>
+                                    <option value="">option 3</option>
+                                    <option value="">option 4</option>
+                                </select>
+                                </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mail ID<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                                <div  class="mb-4">
+                                    <label for="">Project Starting Date<span class="required">*</span></label>
+                                    <input class="form-control bg-transparent " type="date" name="" id="">
+                                </div>
 
+                                <div  class="mb-4">
+                                    <label for="">Description</span></label>
+                                    <textarea class="form-control bg-transparent" name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                
+                            </div>
 
-
-                        <div class="float-right">
-                          <a href="#" class="btn btn-outline-dark next-button" data-next="content2">Next</a>
-                      </div>
-
+                        </div>
                     </div>
-                   
 
 
+                    <div class="float-right">
+                        <a href="#" class="btn px-4 py-2 next-button custom-orange-button" data-next="content2">Next To Choose Category</a>
+                    </div>
 
+                </div>
 
 
                     
                   </div>
                   <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
                     <div class="my-5">
+                        <div class="row add-new-projects_wrapper">
 
-                      <div class="text-center mb-4">
-                        <div class="h5 text-dark">(A) For Orders</div>
-                      </div>
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Designation<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mobile No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mail ID<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                            <div class="col-12 col-lg-6 card">
+    
+                                
+    
+                                <div class="card-body text-dark">
+    
+                                    <div class="mb-4">
+                                        <label for="">Choose Category<span class="required">*</span></label>
+                                        <select class="form-control bg-transparent" name="" id="">
+                                        <option selected disabled value="">Zilara</option>
+                                        <option value="">option 1</option>
+                                        <option value="">option 2</option>
+                                        <option value="">option 3</option>
+                                        <option value="">option 4</option>
+                                    </select>
+                                    </div>
+    
+                                    <div class="mb-4">
+                                            <div>Drag & drop to Add Peoples Or Search</div>
+                                    </div>
 
 
-                      <div class="text-center mb-4">
-                        <div class="h5 text-dark">(B) For Orders</div>
-                      </div>
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Designation<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mobile No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mail ID<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                        <div class="float-right">
-                          <a href="#" class="btn btn-outline-dark next-button" data-next="content3">Next</a>
+                                    <div  class="mb-4">
+                                        <ul class="list-unstyled avatar-tooltip-images_wrapper justify-content-start order-list m-b-0 m-b-0">
+                                            <li class="team-member team-member-sm"><img class="rounded-circle" src="assets/img/users/user-3.png" alt="user" data-toggle="tooltip" title="" data-original-title="Wildan Ahdian"></li>
+                                            <li class="team-member team-member-sm"><img class="rounded-circle" src="assets/img/users/user-4.png" alt="user" data-toggle="tooltip" title="" data-original-title="John Deo"></li>
+                                            <li class="team-member team-member-sm"><img class="rounded-circle" src="assets/img/users/user-5.png" alt="user" data-toggle="tooltip" title="" data-original-title="Sarah Smith"></li>
+                                            <li class="team-member team-member-sm"><img class="rounded-circle" src="assets/img/users/user-2.png" alt="user" data-toggle="tooltip" title="" data-original-title="John Smith"></li>
+                                          </ul>
+                                    </div>
+    
+                                    <div class="mb-4">
+                                        <div>Assign role</div>
+                                    </div>
+    
+                                    <div class="mb-4">
+                                        <label for="">Choose Category<span class="required">*</span></label>
+                                        <select class="form-control bg-transparent" name="" id="">
+                                        <option selected value="">Zilara</option>
+                                        <option value="">option 1</option>
+                                        <option value="">option 2</option>
+                                        <option value="">option 3</option>
+                                        <option value="">option 4</option>
+                                    </select>
+                                    </div>
+                                    
+                                </div>
+    
+                            </div>
+    
+                            <div class="col-12 col-lg-6 card">
+    
+                                
+    
+                                <div class="card-body text-dark">
+    
+    
+                                    <div class="mb-4">
+                                        <label for="">Invoice Type<span class="required">*</span></label>
+                                        <select class="form-control bg-transparent" name="" id="">
+                                        <option selected value="">Auto Generated</option>
+                                        <option value="">option 1</option>
+                                        <option value="">option 2</option>
+                                        <option value="">option 3</option>
+                                        <option value="">option 4</option>
+                                    </select>
+                                    </div>
+    
+                                    <div class="mb-4">
+                                        <label for="">Invoice Time<span class="required">*</span></label>
+                                        <select class="form-control bg-transparent" name="" id="">
+                                        <option selected value="">30 Days</option>
+                                        <option value="">option 1</option>
+                                        <option value="">option 2</option>
+                                        <option value="">option 3</option>
+                                        <option value="">option 4</option>
+                                    </select>
+                                    </div>
+    
+                                    <div class="mb-4">
+                                        <label for="">Zilara Project Timeline<span class="required">*</span></label>
+                                        <div class="d-flex align-items-center">
+                                            <span><i class="far fa-calendar-alt"></i></span>
+                                            <input class="form-control custom-btn-border" type="text" placeholder="Date Range" name="datefilter" value="">
+                                
+                                          </div>
+                                    </div>
+    
+                                    <div  class="mb-4">
+                                        <label for="">Description</span></label>
+                                        <textarea class="form-control bg-transparent" name="" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                    
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <a class="btn btn-outline-dark previous-button" href="#" data-previous="content1">Previous</a>
+                        </div>
+                          <div>
+                            <a href="#" class="px-3 py-2 btn btn-outline-dark mr-3">Add New Category</a>
+                            <a href="#" class="px-3 py-2 btn btn-success finsih-project_btn">Finish Project</a>
+                          </div>
                       </div>
 
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">
-                    <div class="my-5">
-
-                      <div class="text-center mb-4">
-                        <div class="h5 text-dark">CIN (Only for Companies)</div>
-                      </div>
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>GSTN<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Income Tax Pan<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
                 
-
-
-                      <div class="text-center mb-4">
-                        <div class="h5 text-dark">Bank Details</div>
-                      </div>
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Bank Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Branch Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Address<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Account No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Type of Account<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>IFSC No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex justify-content-end">
-                        <div class="footer-card">
-                            <div class="upload-text mb-3">Upload Your Cancelled Check Leaf</div>
-                
-                            <div class="row">
-                                <div class="col-sm-6 mb-4">
-                                    <div>Cancelled Check Leaf<span>*</span></div>
-                                    <input id="check-leaf" type="file" class="d-none" onchange="displayFileName('check-leaf', 'check-leaf-label')">
-                                    <div>
-                                        <label class="browse-file-label text-center" for="check-leaf">
-                                            <div>Browse</div>
-                                        </label>
-                                    </div>
-                                    <div id="check-leaf-label"></div>
-                                </div>
-                                <div class="col-sm-6 mb-4">
-                                    <div>GST Certificate<span>*</span></div>
-                                    <input id="gst-certificate" type="file" class="d-none" onchange="displayFileName('gst-certificate', 'gst-certificate-label')">
-                
-                                    <div>
-                                        <label class="browse-file-label text-center" for="gst-certificate">
-                                            <div>Browse</div>
-                                        </label>
-                                    </div>
-                                    <div id="gst-certificate-label"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <a href="#" class="btn finish-button">Continue</a>
-                            </div>
-                        </div>                         
-                    </div>
-                    </div>
-                  </div>
               </div>
           </div>
       
@@ -698,32 +686,88 @@
   <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
   <!-- Page Specific JS File -->
   <script src="assets/js/page/index.js"></script>
+    <!-- JS Libraies -->
+    <script src="assets/bundles/dropzonejs/min/dropzone.min.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/multiple-upload.js"></script>
+    <!-- Template JS File -->
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
-  <script>
+
+<script>
     $(document).ready(function () {
         $(".next-button").click(function () {
             var nextTabId = $(this).data("next");
             $('a[href="#' + nextTabId + '"]').tab('show');
         });
+
+        $(".previous-button").click(function () {
+            var previousTabId = $(this).data("previous");
+            $('a[href="#' + previousTabId + '"]').tab('show');
+        });
     });
 </script>
 
-<script>
-  function displayFileName(inputId, labelId) {
-      const inputElement = document.getElementById(inputId);
-      const labelElement = document.getElementById(labelId);
 
-      if (inputElement.files.length > 0) {
-          labelElement.textContent = "Selected file: " + inputElement.files[0].name;
-      } else {
-          labelElement.textContent = "";
-      }
-  }
-</script>
+
+
+<script type="text/javascript">
+    $(function() {
+    
+      $('input[name="datefilter"]').daterangepicker({
+    ranges: {
+        'Today': [moment(), moment()],
+        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+        'This Month': [moment().startOf('month'), moment().endOf('month')],
+        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+    },
+    "locale": {
+        "format": "MM/DD/YYYY",
+        "separator": " - ",
+        "applyLabel": "Apply",
+        "cancelLabel": "Cancel",
+        "fromLabel": "From",
+        "toLabel": "To",
+        "customRangeLabel": "Custom",
+        "weekLabel": "W",
+        "daysOfWeek": [
+            "Su",
+            "Mo",
+            "Tu",
+            "We",
+            "Th",
+            "Fr",
+            "Sa"
+        ],
+        "monthNames": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ],
+        "firstDay": 1
+    }
+}, function(start, end, label) {
+  console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+});
+    
+    });
+    </script>
 </body>
 
 

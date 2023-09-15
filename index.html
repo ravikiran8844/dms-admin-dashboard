@@ -475,7 +475,7 @@
             </div>
             <div>
               <div class="h6">WIP Orders</div>
-              <h4>400,000</h4>
+              <h4 class="text-dark">400,000</h4>
             </div>
           </div>
 
@@ -494,23 +494,17 @@
 
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-4">
       <div class="card h-100">
-        <div class="card-statistic-4">
-          <div class="align-items-center justify-content-between">
-            <div class="row ">
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                <div class="card-content">
-                  <h5 class="font-15"> Customers</h5>
-                  <h2 class="mb-3 font-18">1,287</h2>
-                  <p class="mb-0"><span class="col-orange">09%</span> Decrease</p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                <div class="banner-img">
-                  <img src="assets/img/banner/2.png" alt="">
-                </div>
+        <div class="row ">
+          <div class="col-12 pt-3">
+            <div class="card-body">
+              <div class="h6 mb-2"> Total Orders</div>
+              <div class="d-flex align-items-center">
+                <h4 class="mb-3 mr-3 text-dark">688,000</h2>
+              <div class="h6">last 30 days order 563000gm</div>
               </div>
             </div>
           </div>
+       
         </div>
       </div>
     </div>
@@ -548,7 +542,7 @@
             <div>
               <div class="h6">FGS Orders</div>
               <div>Lifting Pending</div>
-              <h4>88000</h4>
+              <h4 class="text-dark">88000</h4>
             </div>
           </div>
 
@@ -582,7 +576,7 @@
             </div>
             <div>
               <div class="h6">Orders Shipped</div>
-              <h4>30</h4>
+              <h4 class="text-dark">30</h4>
             </div>
           </div>
 
@@ -619,7 +613,7 @@
             </div>
             <div>
               <div class="h6">Orders Near Completion</div>
-              <h4>12</h4>
+              <h4 class="text-dark">12</h4>
             </div>
           </div>
 
@@ -642,37 +636,15 @@
     <div class="col-12 col-sm-12 col-lg-7 mb-4">
       <div class="card h-100">
         <div class="card-header">
-          <h4>Statistics</h4>
+          <h4>Order Report</h4>
           <div class="card-header-action">
             <a href="#" class="btn active">Week</a>
             <a href="#" class="btn">Month</a>
             <a href="#" class="btn">Year</a>
           </div>
         </div>
-        <div class="card-body"><div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-          <canvas id="myChart2" height="402" width="672" style="display: block; height: 322px; width: 538px;" class="chartjs-render-monitor"></canvas>
-          <div class="statistic-details mt-1">
-            <div class="statistic-details-item">
-              <div class="text-small text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 12%</div>
-              <div class="detail-value">$125</div>
-              <div class="detail-name">Today</div>
-            </div>
-            <div class="statistic-details-item">
-              <div class="text-small text-muted"><span class="text-danger"><i class="fas fa-caret-down"></i></span> 33%</div>
-              <div class="detail-value">$3,564</div>
-              <div class="detail-name">This Week</div>
-            </div>
-            <div class="statistic-details-item">
-              <div class="text-small text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span>19%</div>
-              <div class="detail-value">$14,687</div>
-              <div class="detail-name">This Month</div>
-            </div>
-            <div class="statistic-details-item">
-              <div class="text-small text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span>29%</div>
-              <div class="detail-value">$88,568</div>
-              <div class="detail-name">This Year</div>
-            </div>
-          </div>
+        <div class="card-body">
+
         </div>
       </div>
     </div>
@@ -680,7 +652,7 @@
     <div class="col-12 col-sm-12 col-lg-5 mb-4">
       <div class="card h-100">
         <div class="card-header">
-          <h4>Summary</h4>
+          <h4>Overdue Orders</h4>
           <div class="card-header-action">
             <a href="#">See All</a>
           </div>
@@ -777,23 +749,63 @@
                   <td>Mar 13, 2023
                   </td>
                   <td>
-                    <div class="badge wip">East Zone <i class="ml-2 fas fa-chevron-down"></i></div>
+                    <div class="badge wip">Completed <i class="ml-2 fas fa-chevron-down"></i></div>
                   </td>
-                  <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
+                  <td class="text-center"><button class="btn toggle-sub-table"><i class="fas fa-angle-right"></i></button></td>
                 </tr>
 
-                <tr>
+                <tr class="sub-table">
+                  <td colspan="9">
+                      <table class="table">
+                          <thead>
+                              <tr>
+                                  <th>Jobcard ID</th>
+                                  <th>Project</th>
+                                  <th>Weight</th>
+                                  <th>Start Date</th>
+                                  <th>Due Date</th>
+                                  <th>Comments</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>12175</td>
+                                  <td>Silver Home Decor</td>
+
+                                  <td>318</td>
+
+                                  <td>Aug 13, 2023</td>
+                                  <td>Aug 24, 2023</td>
+                                  <td>Order delay due to Metal availability....</td>
+                                </tr>
+                                <tr>
+                                  <td>12176</td>
+                                  <td>Silver Cladding</td>
+
+                                  <td>218</td>
+
+                                  <td>Aug 14, 2023</td>
+                                  <td>Aug 20, 2023</td>
+                                  <td>Order delay due to Metal availability....</td>
+                                </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+            
+            
+              <tr>
                   <td class="text-center pt-2">
                     <div class="custom-checkbox custom-control">
                       <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                        id="checkbox-1">
-                      <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                        id="checkbox-2">
+                      <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
                     </div>
                   </td>
                   <td>999-5878</td>
                   
                   <td>
-                    <div class="text-dark h6">Jai Durga Jewellers</div>
+                    <div class="text-dark h6">Chandi Bazar</div>
                     <div>9th,Teachers Colony,..</div>
                   </td>
                   
@@ -806,175 +818,111 @@
                   <td>Mar 13, 2023
                   </td>
                   <td>
-                    <div class="badge wip">East Zone <i class="ml-2 fas fa-chevron-down"></i></div>
+                    <div class="badge overdue">Overdue <i class="ml-2 fas fa-chevron-down"></i></div>
                   </td>
-                  <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
-                </tr>  <tr>
-                  <td class="text-center pt-2">
-                    <div class="custom-checkbox custom-control">
-                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                        id="checkbox-1">
-                      <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                    </div>
-                  </td>
-                  <td>999-5878</td>
-                  
-                  <td>
-                    <div class="text-dark h6">Jai Durga Jewellers</div>
-                    <div>9th,Teachers Colony,..</div>
-                  </td>
-                  
-                  <td>Silver Chain (+3)</td>
-
-                  <td>448.81</td>
-
-                  <td>Mar 13, 2023</td>
-
-                  <td>Mar 13, 2023
-                  </td>
-                  <td>
-                    <div class="badge wip">East Zone <i class="ml-2 fas fa-chevron-down"></i></div>
-                  </td>
-                  <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
-                </tr>  <tr>
-                  <td class="text-center pt-2">
-                    <div class="custom-checkbox custom-control">
-                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                        id="checkbox-1">
-                      <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                    </div>
-                  </td>
-                  <td>999-5878</td>
-                  
-                  <td>
-                    <div class="text-dark h6">Jai Durga Jewellers</div>
-                    <div>9th,Teachers Colony,..</div>
-                  </td>
-                  
-                  <td>Silver Chain (+3)</td>
-
-                  <td>448.81</td>
-
-                  <td>Mar 13, 2023</td>
-
-                  <td>Mar 13, 2023
-                  </td>
-                  <td>
-                    <div class="badge wip">East Zone <i class="ml-2 fas fa-chevron-down"></i></div>
-                  </td>
-                  <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
-                </tr>  <tr>
-                  <td class="text-center pt-2">
-                    <div class="custom-checkbox custom-control">
-                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                        id="checkbox-1">
-                      <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                    </div>
-                  </td>
-                  <td>999-5878</td>
-                  
-                  <td>
-                    <div class="text-dark h6">Jai Durga Jewellers</div>
-                    <div>9th,Teachers Colony,..</div>
-                  </td>
-                  
-                  <td>Silver Chain (+3)</td>
-
-                  <td>448.81</td>
-
-                  <td>Mar 13, 2023</td>
-
-                  <td>Mar 13, 2023
-                  </td>
-                  <td>
-                    <div class="badge wip">East Zone <i class="ml-2 fas fa-chevron-down"></i></div>
-                  </td>
-                  <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
-                </tr>  <tr>
-                  <td class="text-center pt-2">
-                    <div class="custom-checkbox custom-control">
-                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                        id="checkbox-1">
-                      <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                    </div>
-                  </td>
-                  <td>999-5878</td>
-                  
-                  <td>
-                    <div class="text-dark h6">Jai Durga Jewellers</div>
-                    <div>9th,Teachers Colony,..</div>
-                  </td>
-                  
-                  <td>Silver Chain (+3)</td>
-
-                  <td>448.81</td>
-
-                  <td>Mar 13, 2023</td>
-
-                  <td>Mar 13, 2023
-                  </td>
-                  <td>
-                    <div class="badge wip">East Zone <i class="ml-2 fas fa-chevron-down"></i></div>
-                  </td>
-                  <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
-                </tr>  <tr>
-                  <td class="text-center pt-2">
-                    <div class="custom-checkbox custom-control">
-                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                        id="checkbox-1">
-                      <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                    </div>
-                  </td>
-                  <td>999-5878</td>
-                  
-                  <td>
-                    <div class="text-dark h6">Jai Durga Jewellers</div>
-                    <div>9th,Teachers Colony,..</div>
-                  </td>
-                  
-                  <td>Silver Chain (+3)</td>
-
-                  <td>448.81</td>
-
-                  <td>Mar 13, 2023</td>
-
-                  <td>Mar 13, 2023
-                  </td>
-                  <td>
-                    <div class="badge wip">East Zone <i class="ml-2 fas fa-chevron-down"></i></div>
-                  </td>
-                  <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
-                </tr>  <tr>
-                  <td class="text-center pt-2">
-                    <div class="custom-checkbox custom-control">
-                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
-                        id="checkbox-1">
-                      <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                    </div>
-                  </td>
-                  <td>999-5878</td>
-                  
-                  <td>
-                    <div class="text-dark h6">Jai Durga Jewellers</div>
-                    <div>9th,Teachers Colony,..</div>
-                  </td>
-                  
-                  <td>Silver Chain (+3)</td>
-
-                  <td>448.81</td>
-
-                  <td>Mar 13, 2023</td>
-
-                  <td>Mar 13, 2023
-                  </td>
-                  <td>
-                    <div class="badge wip">East Zone <i class="ml-2 fas fa-chevron-down"></i></div>
-                  </td>
-                  <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
+                  <td class="text-center"><button class="btn toggle-sub-table"><i class="fas fa-angle-right"></i></button></td>
                 </tr>
+                
+                <tr class="sub-table">
+                  <td colspan="9">
+                      <table class="table">
+                          <thead>
+                              <tr>
+                                  <th>Jobcard ID</th>
+                                  <th>Project</th>
+                                  <th>Weight</th>
+                                  <th>Start Date</th>
+                                  <th>Due Date</th>
+                                  <th>Comments</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>12177</td>
+                                  <td>Silver Home Decor</td>
+
+                                  <td>368</td>
+
+                                  <td>Aug 23, 2023</td>
+                                  <td>Aug 26, 2023</td>
+                                  <td>Order delay due to Metal availability....</td>
+                                </tr>
+                                <tr>
+                                  <td>12177</td>
+                                  <td>Silver Cladding</td>
+
+                                  <td>218</td>
+
+                                  <td>Aug 16, 2023</td>
+                                  <td>Aug 20, 2023</td>
+                                  <td>Order delay due to Metal availability....</td>
+                                </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              
 
 
 
+              <tr>
+                <td class="text-center pt-2">
+                  <div class="custom-checkbox custom-control">
+                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                      id="checkbox-3">
+                    <label for="checkbox-3" class="custom-control-label">&nbsp;</label>
+                  </div>
+                </td>
+                <td>999-5878</td>
+                
+                <td>
+                  <div class="text-dark h6">Arvind Jewellers</div>
+                  <div>9th,Teachers Colony,..</div>
+                </td>
+                
+                <td>Silver Chain (+3)</td>
+
+                <td>448.81</td>
+
+                <td>Mar 13, 2023</td>
+
+                <td>Mar 13, 2023
+                </td>
+                <td>
+                  <div class="badge pending">Pending <i class="ml-2 fas fa-chevron-down"></i></div>
+                </td>
+                <td class="text-center"><button class="btn toggle-sub-table"><i class="fas fa-angle-right"></i></button></td>
+              </tr>
+              
+              <tr class="sub-table">
+                <td colspan="9">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Jobcard ID</th>
+                                <th>Project</th>
+                                <th>Weight</th>
+                                <th>Start Date</th>
+                                <th>Due Date</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12167</td>
+                                <td>Silver Home Decor</td>
+
+                                <td>360</td>
+
+                                <td>Aug 13, 2023</td>
+                                <td>Aug 26, 2023</td>
+                                <td>Order delay due to Metal availability....</td>
+                              </tr>
+                            
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
 
               </tbody>
             </table>
@@ -1076,6 +1024,16 @@
     
     });
     </script>
+
+<script>
+  $(document).ready(function () {
+      // Toggle visibility of sub-table rows on click
+      $(".toggle-sub-table").click(function () {
+          var subTable = $(this).closest("tr").next(".sub-table");
+          subTable.toggle();
+      });
+  });
+</script>
  
 </body>
 </html>

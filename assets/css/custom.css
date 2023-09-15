@@ -568,3 +568,195 @@ input:checked + .slider:before {
 .zone-btn-text{
     color: #F96421 !important;
 }
+.dark-sidebar .main-sidebar .sidebar-menu li a {
+    color: #A3A1A1;
+}
+.dark-sidebar .main-sidebar .sidebar-brand,.sidebar-wrapper,.sidebar-menu {
+    background: #262626 !important;
+}
+.main-footer{
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+.custom-nav-tabs .nav-pills .nav-item .nav-link {
+    color: #898989;
+    background: transparent;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 0;
+    border-bottom: 1px solid #E2E2E2;
+}
+.custom-nav-tabs .nav-pills .nav-link.active {
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #262626;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 3px solid #2D2D2D;
+    border-radius: 0;
+}
+.custom-form{
+    max-width: 700px;
+}
+
+.custom-form label{
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    margin-right: 10px;
+    color: #2D2D2D;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.custom-form label span{
+    color: #F00;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.custom-form .finish-button,.custom-form .finish-button:hover{
+    background: #F96421 !important;
+    color: #FFF !important;
+    width: 100%;
+
+}
+@media(min-width:768px){
+    .custom-form label{
+        width: 180px;
+        margin-right: 10px;
+        color: #2D2D2D;
+        text-align: right;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .custom-form label span{
+        color: #F00;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .custom-nav-tabs .nav-pills .nav-item .nav-link {
+        color: #898989;
+        background: transparent;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 0;
+        border-bottom: 1px solid #E2E2E2;
+    }
+    .custom-nav-tabs .nav-pills .nav-link.active {
+        color: #fff;
+        background: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        color: #262626;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-bottom: 3px solid #2D2D2D;
+        border-radius: 0;
+    }
+    .custom-form input{
+        max-width: 477px;
+    }
+  
+}
+
+
+.custom-form .footer-card{
+    width: 477px;
+}
+.browse-file-label{
+    border-radius: 5px;
+    border: 2px dashed #E1E1E1;
+    background: #FFF;
+    color: #9D9D9D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    cursor: pointer;
+}
+.footer-card span,.required{
+    color: #F00;
+}
+.upload-text{
+    color: #F96421;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.file-upload_wrapper{
+    border-radius: 6px;
+border: 1px dashed #D8D8D8;
+background: #F5F6F6;
+}
+.logo-wrapper{
+    border-radius: 6px;
+border: 1px dashed #D8D8D8;
+background: #F5F6F6;
+width: 182px;
+min-height: 164px;
+flex-shrink: 0;
+}
+
+.theme-white .file-uploader_container .dropzone{
+    border: 0;
+    background: #F5F6F6;
+}
+
+.add-new-projects_wrapper .card{
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border: 1px solid #E6E6E6;
+
+}
+
+.finsih-project_btn{
+    background: #00B112;
+    color: #FFF;
+
+}
+.sub-table {
+    display: none;
+}
+
+
+.sub-table .table thead th,.sub-table .table tbody tr{
+    background-color: #fff !important;
+}
