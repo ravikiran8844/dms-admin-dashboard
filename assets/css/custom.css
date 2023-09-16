@@ -760,3 +760,20 @@ flex-shrink: 0;
 .sub-table .table thead th,.sub-table .table tbody tr{
     background-color: #fff !important;
 }
+
+   /* Style for the tooltip */
+   .custom-tooltip {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Make the tooltip responsive */
+  @media (max-width: 768px) {
+    .custom-tooltip {
+      max-width: 100%;
+    }
+  }
