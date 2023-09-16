@@ -31,7 +31,7 @@ $('.sparkline-line').sparkline(sparkline_values, {
 $(".sparkline-bar").sparkline(sparkline_values_bar, {
   type: 'bar',
   width: '100%',
-  height: '200',
+  height: '400',
   barColor: 'rgb(63,82,227)',
   barWidth: 20
 });

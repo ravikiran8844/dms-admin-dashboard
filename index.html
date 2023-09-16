@@ -502,6 +502,9 @@
                 <h4 class="mb-3 mr-3 text-dark">688,000</h2>
               <div class="h6">last 30 days order 563000gm</div>
               </div>
+
+              <canvas id="myChart2" ></canvas>
+
             </div>
           </div>
        
@@ -633,8 +636,8 @@
 
   <div class="row">
    
-    <div class="col-12 col-sm-12 col-lg-7 mb-4">
-      <div class="card h-100">
+    <div class="col-12 col-sm-12 col-lg-6 mb-4">
+      <div class="card custom-card-items">
         <div class="card-header">
           <h4>Order Report</h4>
           <div class="card-header-action">
@@ -644,13 +647,14 @@
           </div>
         </div>
         <div class="card-body">
+          <canvas id="myChart" ></canvas>
 
         </div>
       </div>
     </div>
 
-    <div class="col-12 col-sm-12 col-lg-5 mb-4">
-      <div class="card h-100">
+    <div class="col-12 col-sm-12 col-lg-6 mb-4">
+      <div class="card custom-card-items">
         <div class="card-header">
           <h4>Overdue Orders</h4>
           <div class="card-header-action">
@@ -658,6 +662,94 @@
           </div>
         </div>
         <div class="card-body">
+
+          <div class="">
+            <table class="table table-bordered table-md">
+                <thead>
+                  <tr>
+                    <th>Dealers</th>
+                    <th>Qty</th>
+                    <th>Due Date</th>
+                    <th class="text-red">Overdue Days</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="h6">Jai Durga Jewel..</div>
+                      <div>C023-10059628</div>
+                    </td>
+                    <td>448.81</td>
+                    <td>Sept 02, 2023</td>
+                    <td class="text-red">10 days</td>
+
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="h6">Jai Durga Jewel..</div>
+                      <div>C023-10059628</div>
+                    </td>
+                    <td>448.81</td>
+                    <td>Sept 02, 2023</td>
+                    <td class="text-red">10 days</td>
+
+                  </tr>                  
+                  <tr>
+                    <td>
+                      <div class="h6">Jai Durga Jewel..</div>
+                      <div>C023-10059628</div>
+                    </td>
+                    <td>448.81</td>
+                    <td>Sept 02, 2023</td>
+                    <td class="text-red">10 days</td>
+
+                  </tr>                  
+                  <tr>
+                    <td>
+                      <div class="h6">Jai Durga Jewel..</div>
+                      <div>C023-10059628</div>
+                    </td>
+                    <td>448.81</td>
+                    <td>Sept 02, 2023</td>
+                    <td class="text-red">10 days</td>
+
+                  </tr>                  
+                  <tr>
+                    <td>
+                      <div class="h6">Jai Durga Jewel..</div>
+                      <div>C023-10059628</div>
+                    </td>
+                    <td>448.81</td>
+                    <td>Sept 02, 2023</td>
+                    <td class="text-red">10 days</td>
+
+                  </tr>                  
+                  <tr>
+                    <td>
+                      <div class="h6">Jai Durga Jewel..</div>
+                      <div>C023-10059628</div>
+                    </td>
+                    <td>448.81</td>
+                    <td>Sept 02, 2023</td>
+                    <td class="text-red">10 days</td>
+
+                  </tr>                 
+                   <tr>
+                    <td>
+                      <div class="h6">Jai Durga Jewel..</div>
+                      <div>C023-10059628</div>
+                    </td>
+                    <td>448.81</td>
+                    <td>Sept 02, 2023</td>
+                    <td class="text-red">10 days</td>
+
+                  </tr>           
+
+                </tbody>
+
+            </table>
+
+          </div>
          
         </div>
       </div>
@@ -954,14 +1046,20 @@
   <!-- General JS Scripts -->
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
-  <script src="assets/bundles/chartjs/chart.min.js"></script>
-  <script src="assets/bundles/jquery.sparkline.min.js"></script>
   <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
   <script src="assets/bundles/datatables/datatables.min.js"></script>
   <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
   <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
   <!-- Page Specific JS File -->
   <script src="assets/js/page/datatables.js"></script>
+  <!-- JS Libraies -->
+  <script src="assets/bundles/jquery.sparkline.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/sparkline.js"></script>
+  <!-- JS Libraies -->
+  <script src="assets/bundles/chartjs/chart.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/chart-chartjs.js"></script>
   <!-- Page Specific JS File -->
   <script src="assets/js/page/index.js"></script>
   <!-- Template JS File -->

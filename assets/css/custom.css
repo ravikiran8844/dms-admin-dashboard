@@ -761,19 +761,20 @@ flex-shrink: 0;
     background-color: #fff !important;
 }
 
-   /* Style for the tooltip */
-   .custom-tooltip {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+.custom-card-items{
+    max-height: 500px;
+    height: 100%;
+}
 
-  /* Make the tooltip responsive */
-  @media (max-width: 768px) {
-    .custom-tooltip {
-      max-width: 100%;
-    }
-  }
+.custom-card-items .card-body{
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+/* .custom-card-items table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  } */
+
+.text-red{
+    color: #D52222;
+}
