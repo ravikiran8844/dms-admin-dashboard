@@ -778,3 +778,14 @@ flex-shrink: 0;
 .text-red{
     color: #D52222;
 }
+
+.recent-orders-select-box{
+    border-radius: 16px;
+    background: #FEF0E9;
+    color: #313131;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
