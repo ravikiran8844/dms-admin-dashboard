@@ -642,8 +642,26 @@
                             <a href="#" class="text-danger"><img src="assets/img/icons/trash-bin.png" alt=""></a>
                         </div>
                         </td>
-                        <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
+                        <td class="text-center"><button class="btn toggle-sub-table"><i class="fas fa-angle-right"></i></button></td>
                       </tr>
+
+                      <tr class="sub-table">
+                        <td colspan="9">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                       <th>ID</th>
+                                       <th>Orders</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <td>1</td>
+                                  <td>2</td>
+                                    
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
 
 
 
@@ -675,9 +693,26 @@
                             <a href="#" class="text-danger"><img src="assets/img/icons/trash-bin.png" alt=""></a>
                         </div>
                         </td>
-                        <td class="text-center"><button class="btn"><i class="fas fa-angle-right"></i></button></td>
+                        <td class="text-center"><button class="btn toggle-sub-table"><i class="fas fa-angle-right"></i></button></td>
                       </tr>
 
+                      <tr class="sub-table">
+                        <td colspan="9">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                       <th>ID</th>
+                                       <th>Orders</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <td>1</td>
+                                  <td>2</td>
+                                    
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
 
 
 
@@ -775,6 +810,17 @@
     
     });
     </script>
+
+
+<script>
+  $(document).ready(function () {
+      // Toggle visibility of sub-table rows on click
+      $(".toggle-sub-table").click(function () {
+          var subTable = $(this).closest("tr").next(".sub-table");
+          subTable.toggle();
+      });
+  });
+</script>
 </body>
 
 

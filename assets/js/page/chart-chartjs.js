@@ -53,7 +53,7 @@ var myChart = new Chart(ctx, {
 			}],
 			xAxes: [{
 				ticks: {
-					display: true,
+					display: false,
 					fontColor: "#9aa0ac", // Font Color
 				},
 				gridLines: {
@@ -98,7 +98,7 @@ var myChart = new Chart(ctx, {
 			}],
 			xAxes: [{
 				ticks: {
-					display: true
+					display: false
 				},
 				gridLines: {
 					display: false
