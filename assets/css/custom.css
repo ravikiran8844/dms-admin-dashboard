@@ -369,9 +369,44 @@ height: auto !important;
 }
 .main-sidebar .sidebar-brand a .header-logo {
  height:auto;
- max-height: 100px;
+ max-height: 150px;
  max-width: 100%;
  padding: 20px;
+}
+.navbar .navbar-nav{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+.user-profile_name{
+    color: #313131;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.user-profile_caption{
+    color: #7C7C7C;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.header-user-profile-logo_wrapper{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: #EEEFF5;
+}
+.header-user-profile-logo{
+    min-height: 44px;
+    min-width: 44px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .header-logo{
     height: auto;
