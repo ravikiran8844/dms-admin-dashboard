@@ -12,9 +12,15 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+</head>
 </head>
 
 <body>
@@ -288,6 +294,36 @@
         <section class="section">
           <div class="section-body">
             <!-- add content here -->
+
+
+
+<div class="row">
+  <div class="col-12">
+
+
+    <table id="example" class="display" style="width:100%">
+      <thead>
+          <tr>
+            <th></th>
+                            <th></th>
+
+              <th>id</th>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>Salary</th>
+
+          </tr>
+      </thead>
+  </table>
+
+  </div>
+
+</div>
+
+
+
+
           </div>
         </section>
         
@@ -303,10 +339,70 @@
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
   <!-- Page Specific JS File -->
+  <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" defer></script>
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(document).ready(function () {
+// Formatting function for row details - modify as you need
+function format(d) {
+    // `d` is the original data object for the row
+    return (
+        `<div>hellow world</div>`
+    );
+}
+ 
+let table = new DataTable('#example', {
+    ajax: './assets/objects.txt',
+    columns: [
+        {
+            className: 'dt-control',
+            orderable: false,
+            data: null,
+            defaultContent: ''
+        },        
+        { data: 'id' },
+
+        { data: 'name' },
+        { data: 'position' },
+        { data: 'office' },
+        { data: 'salary' }
+    ],  columnDefs: [
+        {
+            orderable: false,
+            targets: 0,
+            defaultContent: '',
+            className: 'select-checkbox'
+
+        }    ],
+select: {
+        style: 'os',
+        selector: 'td:last-child'
+    },
+    order: [[1, 'asc']]
+});
+ 
+// Add event listener for opening and closing details
+table.on('click', 'td.dt-control', function (e) {
+    let tr = e.target.closest('tr');
+    let row = table.row(tr);
+ 
+    if (row.child.isShown()) {
+        // This row is already open - close it
+        row.child.hide();
+    }
+    else {
+        // Open this row
+        row.child(format(row.data())).show();
+    }
+});        });
+    </script>
+
+  </script>
 </body>
 
 

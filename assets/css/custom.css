@@ -15,8 +15,23 @@ body{
     height: 100%;
     min-height: 100vh;
 }.dms_login_page hr{
-    background-color: #242525;
-    height: 1.5px;
+    border: 1px solid #242525;
+    opacity: 1;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.login-phone-input{
+    color: #535353 !important;
+
+}
+.login-phone-input::placeholder{
+    color: #535353;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 14px */
 }
 .dms_login_page_title{
     color: #FFF;
@@ -40,7 +55,9 @@ body{
 .dms_login_page_input-group{
     border-radius: 5px;
     background: #242525;
+    height: 48px;
 }
+
 .dms_login_page_input-item-text{
     color: #606060;
     font-family: Inter;
