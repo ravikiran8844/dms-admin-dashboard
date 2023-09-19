@@ -192,6 +192,7 @@ background: #FFF;
 
 .total-dealers-card_bottom-text{
     max-width: max-content;
+    height: max-content;
 flex-shrink: 0;
 border-radius: 3.858px;
 background: #EBE0FF;
@@ -205,6 +206,7 @@ line-height: normal;
 }
 .fgs-card_bottom-text{
     max-width: max-content;
+    height: max-content;
 flex-shrink: 0;
 border-radius: 3.858px;
 background: #CEFAFF;
@@ -217,6 +219,7 @@ line-height: normal;
 
 }
 .wip-card_bottom-text{
+    height: max-content;
     max-width: max-content;
 flex-shrink: 0;
 border-radius: 3.858px;
@@ -230,6 +233,7 @@ line-height: normal;
 
 }
 .orders-shipped-card_bottom-text{
+    height: max-content;
     max-width: max-content;
 flex-shrink: 0;
 border-radius: 3.858px;
@@ -243,6 +247,7 @@ line-height: normal;
 
 }
 .orders-complted-card_bottom-text{
+    height: max-content;
     max-width: max-content;
 flex-shrink: 0;
 border-radius: 3.858px;
@@ -256,6 +261,7 @@ line-height: normal;
 
 }
 .active-dealers-card_bottom-text{
+    height: max-content;
     max-width: max-content;
 flex-shrink: 0;
 border-radius: 0.24113rem;
@@ -269,6 +275,7 @@ line-height: normal;
 
 }
 .dormant-dealers-card_bottom-text{
+    height: max-content;
     max-width: max-content;
 flex-shrink: 0;
 border-radius: 0.24113rem;
@@ -840,4 +847,27 @@ flex-shrink: 0;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
+}
+.theme-white .page-item.active .page-link{
+    border-radius: 4px;
+    background: #262626;
+    border-color: #262626;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+
+}
+.theme-white .page-item.disabled .page-link{
+    color: #C5C5C5;
+    border-radius: 4px;
+border: 0.644px solid #9D9D9D;
+}
+
+.theme-white .page-item .page-link {
+    color: #313131;
+    border-radius: 4px;
+border: 0.644px solid #656565;  
+}
+body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu>li.active>a{
+    color: #fff;
 }

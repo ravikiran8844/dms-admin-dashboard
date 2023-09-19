@@ -15,12 +15,23 @@
   
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
+  <link href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.css" rel="stylesheet" type="text/css" />
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
-</head>
+
+<style>
+    td.details-control {
+        background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
+        cursor: pointer;
+    }
+
+    tr.shown td.details-control {
+        background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
+    }
+</style>
 </head>
 
 <body>
@@ -313,24 +324,9 @@
 
 <div class="row">
   <div class="col-12">
-
-
-    <table id="example" class="display" style="width:100%">
-      <thead>
-          <tr>
-            <th></th>
-                            <th></th>
-
-              <th>id</th>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Salary</th>
-
-          </tr>
-      </thead>
-  </table>
-
+    <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+                                   
+    </table>
   </div>
 
 </div>
@@ -355,68 +351,135 @@
   <!-- Page Specific JS File -->
   <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" defer></script>
+<script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.js" defer></script>
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
 
-  <script>
-    $(document).ready(function () {
-// Formatting function for row details - modify as you need
-function format(d) {
-    // `d` is the original data object for the row
-    return (
-        `<div>hellow world</div>`
-    );
-}
- 
-let table = new DataTable('#example', {
-    ajax: './assets/objects.txt',
-    columns: [
-        {
-            className: 'dt-control',
+<script>
+  
+var dataSet = [
+    [ "CO23-10059628", "Premlata Silver L..", "Silver Chain (+3)","448.81","Mar 13, 2023","Mar 13, 2023","Pending" ],
+];
+
+        function format(d) {
+
+            return `  <table class="table">
+                          <thead>
+                              <tr>
+                                  <th>Jobcard ID</th>
+                                  <th>Project</th>
+                                  <th>Weight</th>
+                                  <th>Start Date</th>
+                                  <th>Due Date</th>
+                                  <th>Comments</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>12175</td>
+                                  <td>Silver Home Decor</td>
+
+                                  <td>318</td>
+
+                                  <td>Aug 13, 2023</td>
+                                  <td>Aug 24, 2023</td>
+                                  <td>Order delay due to Metal availability....</td>
+                                </tr>
+                                <tr>
+                                  <td>12176</td>
+                                  <td>Silver Cladding</td>
+
+                                  <td>218</td>
+
+                                  <td>Aug 14, 2023</td>
+                                  <td>Aug 20, 2023</td>
+                                  <td>Order delay due to Metal availability....</td>
+                                </tr>
+                          </tbody>
+                      </table>`;
+        }
+
+
+ $(document).ready(function () {
+            //call the action method and get the data.
+            var table = $("#datatables").DataTable({
+                data: dataSet,
+               "pagingType": "full_numbers",
+               "lengthMenu": [
+                            [10, 25, 50, -1],
+                            [10, 25, 50, "All"]
+                        ],
+               responsive: true,
+               language: {
+                        search: "_INPUT_",
+                        searchPlaceholder: "Order ID, Dealer Name or Jobcard ID",
+                        },
+               "columns": [
+                 {
             orderable: false,
-            data: null,
-            defaultContent: ''
-        },        
-        { data: 'id' },
+            className: 'select-checkbox',
+                   defaultContent: '',
+                   data: null,
+                   title: 'Select Ids"'                   
+                 },
+                 
+                 { data: 0,
+                     title: "Order ID" }, 
+                     { data: 1,
+                     title: "Dealer Name" }, 
+                     { data:2,
+                     title: "Project" }, 
+                     { data: 3,
+                     title: "Weight in Grams" }, 
+                     { data: 4,
+                     title: "Order date" }, 
+                     { data: 5,
+                     title: "Order Started date" }, 
+                     { data: 6,
+                     title: "Status" }, 
+                    {
+                       "className": 'details-control',
+                       "orderable": false,
+                       "data": null,
+                       "defaultContent": ''
+                    },
+                ],
 
-        { data: 'name' },
-        { data: 'position' },
-        { data: 'office' },
-        { data: 'salary' }
-    ],  columnDefs: [
-        {
-            orderable: false,
-            targets: 0,
-            defaultContent: '',
-            className: 'select-checkbox'
+        select: {
+            style:    'os',
+            selector: 'td:first-child'
+        },
+                 });
+                 
+            $('#datatables tbody').on('click', 'td.details-control', function () {
+                        var tr = $(this).closest('tr');
+                        var row = table.row(tr);
 
-        }    ],
-select: {
-        style: 'os',
-        selector: 'td:last-child'
-    },
-    order: [[1, 'asc']]
-});
- 
-// Add event listener for opening and closing details
-table.on('click', 'td.dt-control', function (e) {
-    let tr = e.target.closest('tr');
-    let row = table.row(tr);
- 
-    if (row.child.isShown()) {
-        // This row is already open - close it
-        row.child.hide();
-    }
-    else {
-        // Open this row
-        row.child(format(row.data())).show();
-    }
-});        });
-    </script>
+                        if (row.child.isShown()) {
+                            // This row is already open - close it
+                            row.child.hide();
+                            tr.removeClass('shown');
+                        }
+                        else {
+                            // Open this row
+                            row.child(format(row.data())).show();
+                            tr.addClass('shown');
+                        }
+                    });
+                 
+    table
+        .on( 'select', function ( e, dt, type, indexes ) {
+            var id = table.row( indexes ).data()[0];
+            console.log(id)
+        } );
 
-  </script>
+                 
+        });
+                 
+                 
+</script>
 </body>
 
 
