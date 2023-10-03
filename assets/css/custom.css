@@ -837,7 +837,7 @@ flex-shrink: 0;
   } */
 
 .text-red{
-    color: #D52222;
+    color: #D52222 !important;
 }
 
 .recent-orders-select-box{
@@ -897,8 +897,19 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu>li.active>a{
 .custom-dropdown .dropdown-menu .dropdown-item:hover{
  color: #000 !important;
 }
+.custom-dropdown-menu .dropdown-menu {
+    background:#2D2D2D;
+
+}
+.custom-dropdown-menu .dropdown-menu .dropdown-item{
+    color: #AFAFAF !important;
+   }
+.custom-dropdown-menu .dropdown-menu .dropdown-item:hover{
+    background: #4B4B4B;
+    color: #FFF !important;
+   }
 .card-svg_item{
-    border-radius: 11.575px;
+border-radius: 11.575px;
 background: #FEF0E9;
 width: 40.513px;
 height: 40.513px;
@@ -907,3 +918,51 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+.add-products_page label{
+    color: #2D2D2D;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150.523%; /* 21.073px */
+}
+.add-products_page label span{
+    color: #F00;
+}
+
+.add-products_page input::file-selector-button {
+color: #FFF;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 150.523%; /* 18.063px */
+border-radius: 5px 0px 0px 5px;
+background: #A3A3A3;
+margin: 0;
+padding: 11px 15px;
+border: none;
+outline: none;
+
+  }
+  .add-products_page .product-image{
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+    background: #EFEFEF;
+    height: 40.400px;
+    width: 100%;
+  }
+  .add-products_page .badge{
+        width: 120px;
+  }
+  .add-products_page .table-img-wrapper {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+  .add-products_page .table-img-wrapper img {
+    max-width: 38px;
+    max-height: 38px;
+    width: 100%;
+    height: 100%;
+  }

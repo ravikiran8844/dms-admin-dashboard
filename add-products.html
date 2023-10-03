@@ -2,16 +2,19 @@
 <html lang="en">
 
 
-<!-- index.html  21 Nov 2019 03:44:50 GMT -->
+<!-- blank.html  21 Nov 2019 03:54:41 GMT -->
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Emerald DMS Dashboard</title>
+  <title>Team - Emerald DMS Dashboard</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
+
+  <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
@@ -198,7 +201,9 @@
             
             <li class="dropdown">
               <a href="index.html" class="nav-link"><i data-feather="grid"></i><span>Dashboard</span></a>
-            </li>   <li class="dropdown">
+            </li>   
+            
+            <li class="dropdown active">
               <a href="#" class="menu-toggle nav-link has-dropdown">
                 <i data-feather="file-text"></i><span>Masters</span></a>
               <ul class="dropdown-menu">
@@ -222,7 +227,7 @@
 
 
 
-            <li class="dropdown active">
+            <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
                   data-feather="file-text"></i><span>Orders</span></a>
               <ul class="dropdown-menu">
@@ -314,470 +319,305 @@
         </aside>
       </div>
       <!-- Main Content -->
-      <div class="main-content">
+      <div class="main-content add-products_page">
         <section class="section">
+          <div class="section-body">
+            <!-- add content here -->
 
-
-
-          <div class="row">
-            <div class="col-12 mb-4">
-                <div class="h2 page-main-heading">Order Details</div>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-          <div class="col-12 mb-4">
-            <div class="d-flex flex-wrap  justify-content-between align-items-center w-100">
-                <div class="d-flex">
-                  <div class="mr-3">
-                    <a href="/" class="btn btn-sm btn-outline-dark"><i class="fas fa-arrow-left"></i></a>
-                  </div>
-                  <div>
-                    <div class="h4 text-dark">Jai Durga Jewellers - #999 5878</div>
-                    <div>Sub Dealer - <span class="text-dark">Akshay Jewellery</span></div>
-
-                  </div>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="h2 page-main-heading">Masters Page</div>
                 </div>
 
-                <div class="d-flex flex-wrap align-items-center ">
 
-                    <div class="button-group custom-btn-border  bg-white">
-                      <button type="button" class="btn btn-default btn-sm dropdown-toggle text-dark  bg-white" data-toggle="dropdown">Status: <span class="text-success">Completed</span> <span class=" caret"></span></button>
-                      <ul id="designation-type" class="dropdown-menu custom-drop-down-checkboxes">
-                        <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 1</a></li>
-                        <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 2</a></li>
-                        <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 3</a></li>
-                        <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 4</a></li>
-                        <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 5</a></li>
-                        <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 6</a></li>
-                      </ul>
+                <div class="col-12 mb-4">
+                  <div class="h5 page-main-heading">Add Products</div>
+                </div>
+
+
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-id">Product ID<span class="text-danger">*</span></label>
+                            <input id="product-id" class="form-control" type="text" name="" placeholder="Product ID">
+                        </div>
+    
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-name">Product Name<span class="text-danger">*</span></label>
+                            <input id="product-name" class="form-control" type="text" name=""  placeholder="Product Name">
+                        </div>
+    
+    
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-image">Product Image<span class="text-danger">*</span></label>
+                            <div>
+                              <input id="product-image" class="product-image" type="file" name="" >
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-price">Product Price<span class="text-danger">*</span></label>
+                            <input id="product-price" class="form-control" type="text" name=""  placeholder="Product Price">
+                        </div>
+
+
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="designed-date">Designed Date<span class="text-danger">*</span></label>
+                            <input id="designed-date" class="form-control" type="date" name="">
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="design-updated-date">Design Updated Date<span class="text-danger">*</span></label>
+                            <input id="design-updated-date" class="form-control" type="date" name="">
+                        </div>
+
+
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-height">Height<span class="text-danger">*</span></label>
+                            <input id="product-height" class="form-control" type="text" name=""  placeholder="Height">
+                        </div>
+
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-depth">Depth<span class="text-danger">*</span></label>
+                            <input id="product-depth" class="form-control" type="text" name=""  placeholder="Depth">
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-density">Density<span class="text-danger">*</span></label>
+                            <input id="product-density" class="form-control" type="text" name=""  placeholder="Density">
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-width">Width<span class="text-danger">*</span></label>
+                            <input id="product-width" class="form-control" type="text" name=""  placeholder="Width">
+                        </div>
+
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-weight">Weight<span class="text-danger">*</span></label>
+                            <input id="product-weight" class="form-control" type="text" name=""  placeholder="Weight">
+                        </div>
+
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-carat">Product Carat<span class="text-danger">*</span></label>
+                            <input id="product-carat" class="form-control" type="text" name=""  placeholder="Product Carat">
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-color">Product Color<span class="text-danger">*</span></label>
+                            <input id="product-color" class="form-control" type="text" name=""  placeholder="Product Color">
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-size">Product Size<span class="text-danger">*</span></label>
+                            <input id="product-size" class="form-control" type="text" name=""  placeholder="Product Size">
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-finishing">Finishing<span class="text-danger">*</span></label>
+                            <input id="product-finishing" class="form-control" type="text" name=""  placeholder="Product Finishing">
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                          <label class="fs-5 form-label" for="product-price">Project<span class="text-danger">*</span></label>
+                          <select class="form-control" name="" id="">
+                            <option disabled selected value="">Select Project Type</option>
+                            <option value=""> option 1</option>
+                            <option value=""> option 2</option>
+                            <option value=""> option 3</option>
+
+                          </select>
+                        </div>
+
+
+                        <div class="col-12">
+                          <button class="btn btn-warning custom-orange-button mr-3 px-3">Save</button> <button class="btn btn-dark px-3">Cancel</button>
+                        </div>
+
+
+
+
+
+
+
+
+                      </div>
+
                     </div>
 
+                  </div>
 
-          
+                </div>
 
 
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-12 mb-4">
+                  <div class="h5 page-main-heading">Product List</div>
+                </div>
                 
-
-                    <div>
-                        <a href="#" class="btn btn-lg btn-danger custom-orange-button">Download Invoice</a>
-                    </div>
-                </div>
-            </div>
-          </div>
-
-        </div>
-
-
-
-
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body order-details-page-table">
-                <div class="fs-5 mb-2">Order Id : EJ/2324/00008089</div>
-                <h4 class="text-dark mb-4">Order Details</h4>
-
-
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Projects Payments</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table table-sm table-hover mb-0">
-                        <thead>
-                          <tr>
-                            <th>ProductID</th>
-                            <th>Product Name</th>
-                            <th>Project</th>
-                            <th>Purity</th>
-                            <th>Color</th>
-                            <th>Size</th>
-                            <th>Style</th>
-                            <th>Remarks</th>
-                            <th>Quantity</th>
-                            <th>Weight (in gms)</th>
-
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-dark">SFIDOL093-001</td>
-                            <td>Silver Forming Idol </td>
-                            <td>EF Idol</td>
-                            <td  class="text-dark">SIL-99.9</td>
-                            <td>-</td>
-                            <td>Default</td>
-                            <td>BX</td>
-                            <td>ND1 SF SILVER IDOL 999 HOLO...</td>
-                            <td  class="text-dark text-center">
-                              <div>10</div>
-                            </td>
-                            <td  class="text-dark text-center">
-                              <div>35.40</div>
-                            </td>
-
-
-                          </tr>
-
-
-
-                          <tr>
-                            <td class="text-dark">SFIDOL093-001</td>
-                            <td>Silver Forming Idol </td>
-                            <td>EF Idol</td>
-                            <td  class="text-dark">SIL-99.9</td>
-                            <td>-</td>
-                            <td>Default</td>
-                            <td>BX</td>
-                            <td>ND1 SF SILVER IDOL 999 HOLO...</td>
-                            <td  class="text-dark text-center">
-                              <div>10</div>
-                            </td>
-                            <td  class="text-dark text-center">
-                              <div>35.40</div>
-                            </td>
-
-
-                          </tr>
-
-
-
-                          <tr>
-                            <td class="text-dark">SFIDOL093-001</td>
-                            <td>Silver Forming Idol </td>
-                            <td>EF Idol</td>
-                            <td  class="text-dark">SIL-99.9</td>
-                            <td>-</td>
-                            <td>Default</td>
-                            <td>BX</td>
-                            <td>ND1 SF SILVER IDOL 999 HOLO...</td>
-                            <td  class="text-dark text-center">
-                              <div>10</div>
-                            </td>
-                            <td  class="text-dark text-center">
-                              <div>75.40</div>
-                            </td>
-
-
-                          </tr>
-
-
-                          <tr>
-                            <td class="text-dark">SFIDOL093-021</td>
-                            <td>Silver Forming Idol </td>
-                            <td>EF Idol</td>
-                            <td  class="text-dark">SIL-99.9</td>
-                            <td>-</td>
-                            <td>Default</td>
-                            <td>BX</td>
-                            <td>ND1 SF SILVER IDOL 999 HOLO...</td>
-                            <td  class="text-dark text-center">
-                              <div>15</div>
-                            </td>
-                            <td  class="text-dark text-center">
-                              <div>75.40</div>
-                            </td>
-
-
-                          </tr>
-
-
-                          <tr>
-                            <td class="text-dark">SFIDOL093-004</td>
-                            <td>Silver Forming Idol </td>
-                            <td>EF Idol</td>
-                            <td  class="text-dark">SIL-99.9</td>
-                            <td>-</td>
-                            <td>Default</td>
-                            <td>BX</td>
-                            <td>ND1 SF SILVER IDOL 999 HOLO...</td>
-                            <td  class="text-dark text-center">
-                              <div>20</div>
-                            </td>
-                            <td  class="text-dark text-center">
-                              <div>65.40</div>
-                            </td>
-
-
-                          </tr>
-                          
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-12 col-lg-6">
-                    <h4 class="text-dark mb-3">Timeline</h4>
-                    <div class="card  custom-cards">
-                        
-                        <div class="card-body">
-                          <div class="table-responsive">
-                            <table class="table table-sm table-hover mb-0">
-                              <thead>
-                                <tr>
-                                  <th>Job card ID</th>
-                                  <th>Started Date</th>
-                                  <th>Lead Time</th>
-                                  <th>Due Date</th>
-                                  <th>Status</th>
-
-      
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge overdue d-flex align-items-center justify-content-center"><span class="mr-1">Overdue</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge pending d-flex align-items-center justify-content-center"><span class="mr-1">Pending</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge wip d-flex align-items-center justify-content-center"><span class="mr-1">WIP</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge starting d-flex align-items-center justify-content-center"><span class="mr-1">Starting</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge wip d-flex align-items-center justify-content-center"><span class="mr-1">WIP</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge overdue d-flex align-items-center justify-content-center"><span class="mr-1">Overdue</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge pending d-flex align-items-center justify-content-center"><span class="mr-1">Pending</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge starting d-flex align-items-center justify-content-center"><span class="mr-1">Starting</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge wip d-flex align-items-center justify-content-center"><span class="mr-1">WIP</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-                              
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge wip d-flex align-items-center justify-content-center"><span class="mr-1">WIP</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-
-                                <tr>
-                                  <td>999-5878</td>
-                                  <td>Aug 28, 2023</td>
-                                  <td>10:30 AM</td>
-                                  <td>Sep 05, 2023</td>
-                                  <td>
-                                    <div class="badge wip d-flex align-items-center justify-content-center"><span class="mr-1">WIP</span> <i class="fas fa-angle-down"></i></div>
-                                  </td>
-                                </tr>
-                                
-
-
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-
-
-                  <div class="col-12 col-lg-6">
-                    <h4 class="text-dark mb-3">Order information</h4>
-                    <div class="card card-secondary-bg custom-cards">
-                        
-                        <div class="card-body">
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-4 col-form-label">Order ID</label>
-                            <div class="col-sm-8 m-auto">
-                              <div class="d-flex justify-content-between">
-                                <div><span  class="mr-2">:</span> <span>EJ/2324/00008089</span></div>
-                                <div>
-                                  <a class="text-dark" href="#"><i class="fas fa-edit"></i></a>
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table table-striped" id="table-2">
+                          <thead>
+                            <tr>
+                             <th>S.No</th>
+                             <th>Image</th>
+                             <th>Category</th>
+                              <th>Product Name</th>
+                              <th>Project</th>
+                              <th>Qty</th>
+                              <th>Weight (in gms)</th>
+                              <th>Status</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <div class="table-img-wrapper">
+                                  <img width="38" height="38" src="assets/img/image-gallery/4.png" alt="img">
                                 </div>
+                              </td>
+                              
+                              <td>Ganesh Statue</td>
+                              <td>Silver Forming Idol</td>
+                              <td>EF Idol</td>
+                              <td>10</td>
+                              <td>430</td>
+
+                              <td>
+                                <div class="badge wip">Completed <i class="ml-2 fas fa-chevron-down"></i></div>
+                              </td>
+
+                              <td><div class="d-flex">
+                                  <a href="#" class="text-success mr-2"><img src="assets/img/icons/edit-pen.png" alt=""></a>
+                                  <a href="#" class="text-danger"><img src="assets/img/icons/trash-bin.png" alt=""></a>
                               </div>
-                            </div>
-                          </div>
+                              </td>
+                            </tr>
 
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-4 col-form-label">Dealer Name</label>
-                            <div class="col-sm-8 m-auto">
-                              <div>
-                                <div><span  class="mr-2">:</span> <span>Jai Durga Jewellers</span></div> 
+                            <tr>
+                              <td>2</td>
+                              <td>
+                                <div class="table-img-wrapper">
+                                  <img width="38" height="38" src="assets/img/image-gallery/3.png" alt="img">
+                                </div>
+                              </td>
+                              
+                              <td>Ganesh Statue</td>
+                              <td>Silver Forming Idol</td>
+                              <td>EF Idol</td>
+                              <td>10</td>
+                              <td>430</td>
+
+                              <td>
+                                <div class="badge overdue">Overdue <i class="ml-2 fas fa-chevron-down"></i></div>
+                              </td>
+
+                              <td><div class="d-flex">
+                                  <a href="#" class="text-success mr-2"><img src="assets/img/icons/edit-pen.png" alt=""></a>
+                                  <a href="#" class="text-danger"><img src="assets/img/icons/trash-bin.png" alt=""></a>
                               </div>
-                            </div>
-                          </div>
+                              </td>
+                            </tr>
 
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-4 col-form-label">Sub-Dealer Name</label>
-                            <div class="col-sm-8 m-auto">
-                              <div>
-                                <div><span  class="mr-2">:</span> <span>Akshay Jewellery</span></div> 
+
+
+                            <tr>
+                              <td>3</td>
+                              <td>
+                                <div class="table-img-wrapper">
+                                  <img width="38" height="38" src="assets/img/image-gallery/2.png" alt="img">
+                                </div>
+                              </td>
+                              
+                              <td>Ganesh Statue</td>
+                              <td>Silver Forming Idol</td>
+                              <td>EF Idol</td>
+                              <td>10</td>
+                              <td>430</td>
+
+                              <td>
+                                <div class="badge wip">WIP <i class="ml-2 fas fa-chevron-down"></i></div>
+                              </td>
+
+                              <td><div class="d-flex">
+                                  <a href="#" class="text-success mr-2"><img src="assets/img/icons/edit-pen.png" alt=""></a>
+                                  <a href="#" class="text-danger"><img src="assets/img/icons/trash-bin.png" alt=""></a>
                               </div>
-                            </div>
-                          </div>
+                              </td>
+                            </tr>
 
 
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-4 col-form-label">Advance Received</label>
-                            <div class="col-sm-8 m-auto">
-                              <div>
-                                <div><span  class="mr-2">:</span> <span>₹18,63,200.00</span></div> 
+                            <tr>
+                              <td>4</td>
+                              <td>
+                                <div class="table-img-wrapper">
+                                  <img width="38" height="38" src="assets/img/image-gallery/1.png" alt="img">
+                                </div>
+                              </td>
+                              
+                              <td>Ganesh Statue</td>
+                              <td>Silver Forming Idol</td>
+                              <td>EF Idol</td>
+                              <td>10</td>
+                              <td>430</td>
+
+                              <td>
+                                <div class="badge transparent-badge-with-border"><i class="fa fa-solid fa-circle text-success mr-2"></i>Active <i class="ml-2 fas fa-chevron-down"></i></div>
+                              </td>
+
+                              <td><div class="d-flex">
+                                  <a href="#" class="text-success mr-2"><img src="assets/img/icons/edit-pen.png" alt=""></a>
+                                  <a href="#" class="text-danger"><img src="assets/img/icons/trash-bin.png" alt=""></a>
                               </div>
-                            </div>
-                          </div>
-
-
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-4 col-form-label">Total Credit Available</label>
-                            <div class="col-sm-8 m-auto">
-                              <div>
-                                <div><span  class="mr-2">:</span> <span>₹80,12,200.00</span></div> 
-                              </div>
-                            </div>
-                          </div>
-
-
-
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-4 col-form-label">Remarks</label>
-                            <div class="col-sm-9 m-auto">
-                              <div>
-                                
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                          <th>Operation ID</th>
-                                          <th>Comment</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>Finish</td>
-                                        <td>Only Silver no Gold (Only Silver Idol)</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Alterations</td>
-                                        <td>Only air tight box</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Stone</td>
-                                        <td>Finishing as per images</td>
-                                      </tr>
-                                    </tbody>
-                                </table> 
-                              </div>
-                            </div>
-                          </div>
-
-                         
-                        </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
+                    </div>
                   </div>
-
                 </div>
-
-
-
-
-              </div>
-             
             </div>
 
+
+
+
+
+
+
           </div>
-
-        </div>
-
-
-
-
-
-          
         </section>
         
       </div>
       <footer class="main-footer">
-          
-
-
        <div class="col-12 text-center ">
             <div>DMS Dashboard © 2023 All Rights Reserved. Developed by BBIT</div>
           </div>
@@ -788,13 +628,21 @@
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
   <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/bundles/datatables/datatables.min.js"></script>
+  <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/datatables.js"></script>
   <!-- Page Specific JS File -->
   <script src="assets/js/page/index.js"></script>
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
+
+
 </body>
 
 
+<!-- blank.html  21 Nov 2019 03:54:41 GMT -->
 </html>
