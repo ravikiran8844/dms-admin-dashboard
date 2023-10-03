@@ -354,8 +354,11 @@
     
                         <div class="col-12 col-md-6 col-lg-4 mb-4">
                           <label class="fs-5 form-label" for="product-image">Product Image<span class="text-danger">*</span></label>
-                            <div>
-                              <input id="product-image" class="product-image" type="file" name="" >
+                            <div class="d-flex align-items-center justify-content-between">
+
+                              <input id="product-image" class="product-image" type="file" accept="image/*" name="" >
+                              <div id="img-preview"></div>
+
                             </div>
                         </div>
 
@@ -643,6 +646,30 @@
   <script src="assets/js/custom.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+
+  <script>
+    const chooseFile = document.getElementById("product-image");
+    const imgPreview = document.getElementById("img-preview");
+
+    chooseFile.addEventListener("change", function () {
+      getImgData();
+    });
+
+  function getImgData() {
+    const files = chooseFile.files[0];
+    if (files) {
+      const fileReader = new FileReader();
+      fileReader.readAsDataURL(files);
+      fileReader.addEventListener("load", function () {
+        imgPreview.style.display = "block";
+        imgPreview.innerHTML = '<a href="' + this.result + '" data-lightbox="uploaded-image-1" data-title="Selected Image"><img class="img-fluid ml-2" width="40" height="40" src="' + this.result + '" /></a>';
+      });    
+    }
+  }
+  </script>
+
+
 </body>
 
 </html>
