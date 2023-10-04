@@ -403,7 +403,6 @@
                                 <input class="form-control" type="text" name="" id="Admin" disabled  value="Admin">
                               </div>
                             </div>
-
                           </div>
 
 
@@ -421,20 +420,64 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                   
+                    </div>                  
                   </div>
-
                 </div>
+              </div>
+            </div>
 
+
+
+
+            <div class="row">
+              <div id="edit-password-card" class="col-12 mb-2">
+                <div class="card">
+                    <div class="card-header py-4">
+                      <div class="h3 fw-bold text-dark">Password</div>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12 col-lg-8">
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="mb-4">
+                                <label class="form-label h6 text-dark" for="password">Password</label>
+                                <input class="form-control" type="password" name="" id="password" disabled  value="123456">
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="mb-4">
+                                <label class="form-label h6 text-dark" for="confirm-password">Confirm Password</label>
+                                <input class="form-control" type="password" name="" id="confirm-password" disabled  value="123456">
+                              </div>
+                            </div>
+                           
+                          </div>
+  
+  
+                        </div>
+                        <div class="col-12 col-lg-4 mt-2">
+                          <div class="ml-auto">
+                            <button id="edit-password-btn" class="edit-btn" >Edit <span class="ml-1">
+                              <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.0629 9.88692C9.0629 10.518 8.54538 11.0356 7.91426 11.0356H2.10794C1.47682 11.0356 0.959304 10.518 0.959304 9.88692V4.0806C0.959304 3.44948 1.47682 2.93196 2.10794 2.93196H4.96061L5.91992 1.97266H2.10794C0.946682 1.97266 0 2.91934 0 4.0806V9.89954C0 11.0608 0.946682 12.0075 2.10794 12.0075H7.92688C9.08815 12.0075 10.0348 11.0608 10.0348 9.89954V6.08757L9.07552 7.04687V9.88692H9.0629Z" fill="#7E7E7E"/>
+                                <path d="M3.5849 5.64552C3.4713 5.75912 3.40819 5.89797 3.39557 6.04944L3.19361 8.47294C3.18098 8.64966 3.33245 8.80112 3.50917 8.7885L5.93267 8.58654C6.08414 8.57392 6.23561 8.51081 6.33659 8.39721L10.2243 4.5095L7.48523 1.75781L3.5849 5.64552Z" fill="#7E7E7E"/>
+                                <path d="M11.8523 2.23732L9.75703 0.142002C9.56769 -0.0473341 9.27738 -0.0473341 9.08804 0.142002L8.14136 1.08868L10.893 3.84037L11.8397 2.89369C12.0417 2.71698 12.0417 2.41404 11.8523 2.23732Z" fill="#7E7E7E"/>
+                                </svg>
+                            </span>
+                          </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
               </div>
 
 
               <div class="col-12">
                 <button class="btn custom-orange-button">Update</button>
               </div>
-
-
             </div>
           </div>
         </section>
@@ -488,8 +531,12 @@
 
     $("#personal-info-edit").click(function(){
       $("#personal-information input").attr("disabled",false);
-      console.log("btn clicked");
     })
+
+
+      $("#edit-password-btn").click(function(){
+          $("#edit-password-card input").attr("disabled",false);
+      })
   </script>
 </body>
 
