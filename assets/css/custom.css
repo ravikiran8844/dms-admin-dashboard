@@ -634,6 +634,7 @@ input:checked + .slider:before {
 }
 .dark-sidebar .main-sidebar .sidebar-brand,.sidebar-wrapper,.sidebar-menu {
     background: #262626 !important;
+    height: 100vh;
 }
 .main-footer{
     text-transform: capitalize;
