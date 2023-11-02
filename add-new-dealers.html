@@ -1,605 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <!-- index.html  21 Nov 2019 03:44:50 GMT -->
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
+      name="viewport">
+    <title>Emerald DMS Dashboard</title>
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <!-- Custom style CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+  </head>
 
-<!-- index.html  21 Nov 2019 03:44:50 GMT -->
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Emerald DMS Dashboard</title>
-  <!-- General CSS Files -->
-  <link rel="stylesheet" href="assets/css/app.min.css">
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <!-- Custom style CSS -->
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
-</head>
-
-<body>
-  <div class="loader"></div>
-  <div id="app">
-    <div class="main-wrapper main-wrapper-1">
-      <div class="navbar-bg"></div>
-      <nav class="navbar navbar-expand-lg main-navbar sticky">
-        <div class="form-inline mr-auto">
-          <ul class="navbar-nav mr-3">
-            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+  <body>
+    <div class="loader"></div>
+    <div id="app">
+      <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+        <nav class="navbar navbar-expand-lg main-navbar sticky">
+          <div class="form-inline mr-auto">
+            <ul class="navbar-nav mr-3">
+              <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
 									collapse-btn"> <i data-feather="align-justify"></i></a></li>
-            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
-                <i data-feather="maximize"></i>
-              </a></li>
-            
-          </ul>
-        </div>
-        <ul class="navbar-nav navbar-right">
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link nav-link-lg message-toggle"><i data-feather="message-square"></i>
-              <span class="badge headerBadge1 bg-danger">
-                1 </span> </a>
-            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-              <div class="dropdown-header">
-                Messages
-                <div class="float-right">
-                  <a href="#">Mark All As Read</a>
-                </div>
-              </div>
-              <div class="dropdown-list-content dropdown-list-message">
-                <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
-											text-white"> <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">John
-                      Deo</span>
-                    <span class="time messege-text">Please check your mail !!</span>
-                    <span class="time">2 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                      Smith</span> <span class="time messege-text">Request for leave
-                      application</span>
-                    <span class="time">5 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-5.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
-                      Ryan</span> <span class="time messege-text">Your payment invoice is
-                      generated.</span> <span class="time">12 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-4.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
-                      Smith</span> <span class="time messege-text">hii John, I have upload
-                      doc
-                      related to task.</span> <span class="time">30
-                      Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
-                      Joshi</span> <span class="time messege-text">Please do as specify.
-                      Let me
-                      know if you have any query.</span> <span class="time">1
-                      Days Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                      Smith</span> <span class="time messege-text">Client Requirements</span>
-                    <span class="time">2 Days Ago</span>
-                  </span>
-                </a>
-              </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link nav-link-lg message-toggle"><i data-feather="bell" class="bell"></i>
-              <span class="badge headerBadge1 bg-danger">
-                2 </span>
-            </a>
-            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-              <div class="dropdown-header">
-                Notifications
-                <div class="float-right">
-                  <a href="#">Mark All As Read</a>
-                </div>
-              </div>
-              <div class="dropdown-list-content dropdown-list-icons">
-                <a href="#" class="dropdown-item dropdown-item-unread"> <span
-                    class="dropdown-item-icon bg-primary text-white"> <i class="fas
-												fa-code"></i>
-                  </span> <span class="dropdown-item-desc"> Template update is
-                    available now! <span class="time">2 Min
-                      Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="far
-												fa-user"></i>
-                  </span> <span class="dropdown-item-desc"> <b>You</b> and <b>Dedik
-                      Sugiharto</b> are now friends <span class="time">10 Hours
-                      Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i
-                      class="fas
-												fa-check"></i>
-                  </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b> has
-                    moved task <b>Fix bug header</b> to <b>Done</b> <span class="time">12
-                      Hours
-                      Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-danger text-white"> <i
-                      class="fas fa-exclamation-triangle"></i>
-                  </span> <span class="dropdown-item-desc"> Low disk space. Let's
-                    clean it! <span class="time">17 Hours Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="fas
-												fa-bell"></i>
-                  </span> <span class="dropdown-item-desc"> Welcome to Otika
-                    template! <span class="time">Yesterday</span>
-                  </span>
-                </a>
-              </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </li>
+              <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                  <i data-feather="maximize"></i>
+                </a></li>
 
-          <li class="mx-3">
-            <ul class="list-unstyled avatar-tooltip-images_wrapper order-list m-b-0 m-b-0">
-              <li class="team-member team-member-sm"><img class="rounded-circle" src="assets/img/users/user-3.png" alt="user" data-toggle="tooltip" title="" data-original-title="Wildan Ahdian"></li>
-              <li class="team-member team-member-sm"><img class="rounded-circle" src="assets/img/users/user-4.png" alt="user" data-toggle="tooltip" title="" data-original-title="John Deo"></li>
-              <li class="team-member team-member-sm"><img class="rounded-circle" src="assets/img/users/user-5.png" alt="user" data-toggle="tooltip" title="" data-original-title="Sarah Smith"></li>
-              <li class="avatar avatar-sm bg-danger text-white"><div class="avatar-text-center">+16</div></li>
             </ul>
-          </li>
-
-          <li class="dropdown"><a href="#" data-toggle="dropdown"
-              class="nav-link dropdown-toggle nav-link-user"> 
-              
-              
-              <div class="d-flex align-items-center">
-                <div class="mr-3 header-user-profile-logo_wrapper"><img class="header-user-profile-logo" alt="image" src="assets/img/user-profile.png"
-                  class="img-fluid"></div>
-
-                <div>
-                  <div class="user-profile_name">Vishnu prasath</div> 
-                  <div class="user-profile_caption">Admin</div>
+          </div>
+          <ul class="navbar-nav navbar-right">
+            <li class="dropdown dropdown-list-toggle"><a href="#"
+                data-toggle="dropdown"
+                class="nav-link nav-link-lg message-toggle"><i
+                  data-feather="message-square"></i>
+                <span class="badge headerBadge1 bg-danger">
+                  1 </span> </a>
+              <div
+                class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                <div class="dropdown-header">
+                  Messages
+                  <div class="float-right">
+                    <a href="#">Mark All As Read</a>
+                  </div>
                 </div>
-              </div></a>
+                <div class="dropdown-list-content dropdown-list-message">
+                  <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-avatar
+											text-white"> <img alt="image" src="assets/img/users/user-1.png"
+                        class="rounded-circle">
+                    </span> <span class="dropdown-item-desc"> <span
+                        class="message-user">John
+                        Deo</span>
+                      <span class="time messege-text">Please check your mail !!</span>
+                      <span class="time">2 Min Ago</span>
+                    </span>
+                  </a> <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-avatar text-white">
+                      <img alt="image" src="assets/img/users/user-2.png"
+                        class="rounded-circle">
+                    </span> <span class="dropdown-item-desc"> <span
+                        class="message-user">Sarah
+                        Smith</span> <span class="time messege-text">Request for
+                        leave
+                        application</span>
+                      <span class="time">5 Min Ago</span>
+                    </span>
+                  </a> <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-avatar text-white">
+                      <img alt="image" src="assets/img/users/user-5.png"
+                        class="rounded-circle">
+                    </span> <span class="dropdown-item-desc"> <span
+                        class="message-user">Jacob
+                        Ryan</span> <span class="time messege-text">Your payment
+                        invoice is
+                        generated.</span> <span class="time">12 Min Ago</span>
+                    </span>
+                  </a> <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-avatar text-white">
+                      <img alt="image" src="assets/img/users/user-4.png"
+                        class="rounded-circle">
+                    </span> <span class="dropdown-item-desc"> <span
+                        class="message-user">Lina
+                        Smith</span> <span class="time messege-text">hii John, I
+                        have upload
+                        doc
+                        related to task.</span> <span class="time">30
+                        Min Ago</span>
+                    </span>
+                  </a> <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-avatar text-white">
+                      <img alt="image" src="assets/img/users/user-3.png"
+                        class="rounded-circle">
+                    </span> <span class="dropdown-item-desc"> <span
+                        class="message-user">Jalpa
+                        Joshi</span> <span class="time messege-text">Please do
+                        as specify.
+                        Let me
+                        know if you have any query.</span> <span class="time">1
+                        Days Ago</span>
+                    </span>
+                  </a> <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-avatar text-white">
+                      <img alt="image" src="assets/img/users/user-2.png"
+                        class="rounded-circle">
+                    </span> <span class="dropdown-item-desc"> <span
+                        class="message-user">Sarah
+                        Smith</span> <span class="time messege-text">Client
+                        Requirements</span>
+                      <span class="time">2 Days Ago</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="dropdown-footer text-center">
+                  <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown dropdown-list-toggle"><a href="#"
+                data-toggle="dropdown"
+                class="nav-link nav-link-lg message-toggle"><i
+                  data-feather="bell" class="bell"></i>
+                <span class="badge headerBadge1 bg-danger">
+                  2 </span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                <div class="dropdown-header">
+                  Notifications
+                  <div class="float-right">
+                    <a href="#">Mark All As Read</a>
+                  </div>
+                </div>
+                <div class="dropdown-list-content dropdown-list-icons">
+                  <a href="#" class="dropdown-item dropdown-item-unread"> <span
+                      class="dropdown-item-icon bg-primary text-white"> <i
+                        class="fas
+												fa-code"></i>
+                    </span> <span class="dropdown-item-desc"> Template update is
+                      available now! <span class="time">2 Min
+                        Ago</span>
+                    </span>
+                  </a> <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-icon bg-info text-white"> <i
+                        class="far
+												fa-user"></i>
+                    </span> <span class="dropdown-item-desc"> <b>You</b> and <b>Dedik
+                        Sugiharto</b> are now friends <span class="time">10
+                        Hours
+                        Ago</span>
+                    </span>
+                  </a> <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-icon bg-success text-white"> <i
+                        class="fas
+												fa-check"></i>
+                    </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b>
+                      has
+                      moved task <b>Fix bug header</b> to <b>Done</b> <span
+                        class="time">12
+                        Hours
+                        Ago</span>
+                    </span>
+                  </a> <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-icon bg-danger text-white"> <i
+                        class="fas fa-exclamation-triangle"></i>
+                    </span> <span class="dropdown-item-desc"> Low disk space.
+                      Let's
+                      clean it! <span class="time">17 Hours Ago</span>
+                    </span>
+                  </a> <a href="#" class="dropdown-item"> <span
+                      class="dropdown-item-icon bg-info text-white"> <i
+                        class="fas
+												fa-bell"></i>
+                    </span> <span class="dropdown-item-desc"> Welcome to Otika
+                      template! <span class="time">Yesterday</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="dropdown-footer text-center">
+                  <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </li>
 
+            <li class="mx-3">
+              <ul
+                class="list-unstyled avatar-tooltip-images_wrapper order-list m-b-0 m-b-0">
+                <li class="team-member team-member-sm"><img
+                    class="rounded-circle" src="assets/img/users/user-3.png"
+                    alt="user" data-toggle="tooltip" title
+                    data-original-title="Wildan Ahdian"></li>
+                <li class="team-member team-member-sm"><img
+                    class="rounded-circle" src="assets/img/users/user-4.png"
+                    alt="user" data-toggle="tooltip" title
+                    data-original-title="John Deo"></li>
+                <li class="team-member team-member-sm"><img
+                    class="rounded-circle" src="assets/img/users/user-5.png"
+                    alt="user" data-toggle="tooltip" title
+                    data-original-title="Sarah Smith"></li>
+                <li class="avatar avatar-sm bg-danger text-white"><div
+                    class="avatar-text-center">+16</div></li>
+              </ul>
+            </li>
 
-            <div class="dropdown-menu dropdown-menu-right pullDown">
-              <div class="dropdown-title">Hello Vishnu prasath</div>
-              <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+            <li class="dropdown"><a href="#" data-toggle="dropdown"
+                class="nav-link dropdown-toggle nav-link-user">
+
+                <div class="d-flex align-items-center">
+                  <div class="mr-3 header-user-profile-logo_wrapper"><img
+                      class="header-user-profile-logo" alt="image"
+                      src="assets/img/user-profile.png"
+                      class="img-fluid"></div>
+
+                  <div>
+                    <div class="user-profile_name">Vishnu prasath</div>
+                    <div class="user-profile_caption">Admin</div>
+                  </div>
+                </div></a>
+
+              <div class="dropdown-menu dropdown-menu-right pullDown">
+                <div class="dropdown-title">Hello Vishnu prasath</div>
+                <a href="profile.html" class="dropdown-item has-icon"> <i
+                    class="far
 										fa-user"></i> Profile
-              </a> 
-              <div class="dropdown-divider"></div>
-              <a href="auth-login.html" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
-                Logout
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="auth-login.html"
+                  class="dropdown-item has-icon text-danger"> <i
+                    class="fas fa-sign-out-alt"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-sidebar sidebar-style-2">
+          <aside id="sidebar-wrapper">
+            <div class="sidebar-brand">
+              <a href="index.html"> <img alt="image" src="assets/img/logo.png"
+                  class="header-logo" />
               </a>
             </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="main-sidebar sidebar-style-2">
-        <aside id="sidebar-wrapper">
-          <div class="sidebar-brand">
-            <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> 
-            </a>
-          </div>
-          <ul class="sidebar-menu">
-            
-            <li class="dropdown">
-              <a href="index.html" class="nav-link"><i data-feather="grid"></i><span>Dashboard</span></a>
-            </li>   <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown">
-                <i data-feather="file-text"></i><span>Masters</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="add-products.html">Add Products</a></li>
-                <li><a class="nav-link" href="#">Product Categories</a></li>
-                <li><a class="nav-link" href="#">Create New Orders</a></li>
+            <ul class="sidebar-menu">
 
-              </ul>
-            </li>
+              <li class="dropdown">
+                <a href="index.html" class="nav-link"><i data-feather="grid"></i><span>Dashboard</span></a>
+              </li> <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown">
+                  <i data-feather="file-text"></i><span>Masters</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="add-products.html">Add Products</a></li>
+                  <li><a class="nav-link" href="#">Product Categories</a></li>
+                  <li><a class="nav-link" href="#">Create New Orders</a></li>
 
+                </ul>
+              </li>
 
+              <li class="dropdown active">
+                <a href="#" class="menu-toggle nav-link has-dropdown">
+                  <i data-feather="user"></i><span>Dealers</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="dealers.html">List View</a></li>
+                </ul>
+              </li>
 
+              <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                    data-feather="file-text"></i><span>Orders</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="orders.html">Orders</a></li>
+                  <li><a class="nav-link" href="pending-orders.html">Pending
+                      Orders</a></li>
 
-            <li class="dropdown active">
-              <a href="#" class="menu-toggle nav-link has-dropdown">
-                <i data-feather="user"></i><span>Dealers</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="dealers.html">List View</a></li>
-              </ul>
-            </li>
+                </ul>
+              </li>
 
+              <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                    data-feather="truck"></i><span>Shipment</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="shipment.html">Shipment</a></li>
+                </ul>
+              </li>
 
+              <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                    data-feather="users"></i><span>Team</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="team.html">Team</a></li>
+                </ul>
+              </li>
 
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="file-text"></i><span>Orders</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="orders.html">Orders</a></li>
-                <li><a class="nav-link" href="pending-orders.html">Pending Orders</a></li>
+              <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown">
 
-              </ul>
-            </li>
+                  <svg class="feather" width="21" height="17"
+                    viewBox="0 0 21 17" stroke="currentColor" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.4097 6.18665C12.511 6.18665 12.6081 6.14642 12.6798 6.0748C12.7514 6.00318 12.7916 5.90604 12.7916 5.80475C12.7916 5.70347 12.7514 5.60633 12.6798 5.53471C12.6081 5.46309 12.511 5.42285 12.4097 5.42285H8.59071C8.48942 5.42285 8.39228 5.46309 8.32066 5.53471C8.24904 5.60633 8.20881 5.70347 8.20881 5.80475C8.20881 5.90604 8.24904 6.00318 8.32066 6.0748C8.39228 6.14642 8.48942 6.18665 8.59071 6.18665H9.68549C9.94106 6.16539 10.1965 6.2286 10.4127 6.36658C10.6289 6.50456 10.7938 6.70969 10.8821 6.95045H8.59071C8.48942 6.95045 8.39228 6.99069 8.32066 7.06231C8.24904 7.13393 8.20881 7.23107 8.20881 7.33235C8.20881 7.43364 8.24904 7.53078 8.32066 7.6024C8.39228 7.67402 8.48942 7.71425 8.59071 7.71425H10.8821C10.7039 8.22345 10.2456 8.73265 9.68549 8.73265H8.59071C8.51363 8.72472 8.43607 8.74211 8.36976 8.7822C8.30346 8.82229 8.25202 8.8829 8.22325 8.95484C8.19447 9.02678 8.18992 9.10614 8.21028 9.1809C8.23065 9.25566 8.27482 9.32175 8.33611 9.36915L11.0603 11.9406C11.0939 11.9736 11.1337 11.9995 11.1774 12.017C11.2211 12.0345 11.2679 12.0431 11.3149 12.0425C11.4213 12.0383 11.5219 11.9926 11.595 11.9152C11.6324 11.8841 11.6625 11.8452 11.6831 11.8012C11.7038 11.7572 11.7145 11.7092 11.7145 11.6606C11.7145 11.6119 11.7038 11.5639 11.6831 11.5199C11.6625 11.4759 11.6324 11.437 11.595 11.406L9.55819 9.49645H9.68549C10.174 9.48286 10.6418 9.29622 11.0055 8.96981C11.3692 8.64341 11.6052 8.19845 11.6714 7.71425H12.4097C12.511 7.71425 12.6081 7.67402 12.6798 7.6024C12.7514 7.53078 12.7916 7.43364 12.7916 7.33235C12.7916 7.23107 12.7514 7.13393 12.6798 7.06231C12.6081 6.99069 12.511 6.95045 12.4097 6.95045H11.6714C11.5865 6.67179 11.4482 6.41235 11.264 6.18665H12.4097Z"
+                      fill="#A3A1A1" />
+                    <path
+                      d="M20.9385 9.34367L18.6725 6.05933C18.6344 6.01157 18.5859 5.97301 18.5309 5.94651C18.4758 5.92001 18.4154 5.90625 18.3543 5.90625C18.2931 5.90625 18.2328 5.92001 18.1777 5.94651C18.1226 5.97301 18.0742 6.01157 18.036 6.05933L15.7701 9.34367C15.7342 9.4095 15.7134 9.48242 15.709 9.55724C15.7046 9.63205 15.7168 9.70692 15.7446 9.77649C15.7771 9.83864 15.8242 9.89197 15.8819 9.93188C15.9395 9.9718 16.006 9.99711 16.0756 10.0056H17.8578C17.2213 13.8246 13.5805 16.1924 10.4744 16.1924C8.25938 16.1924 5.91706 14.9958 4.49129 13.1372C4.46711 13.085 4.43143 13.0389 4.38692 13.0024C4.3424 12.9658 4.29021 12.9399 4.23425 12.9264C4.17828 12.9129 4.11998 12.9122 4.06372 12.9244C4.00746 12.9366 3.95469 12.9614 3.90935 12.9969C3.86401 13.0324 3.82728 13.0776 3.80191 13.1293C3.77653 13.181 3.76317 13.2377 3.76282 13.2953C3.76247 13.3529 3.77515 13.4098 3.79989 13.4618C3.82463 13.5137 3.86081 13.5595 3.90571 13.5955C5.48424 15.6578 8.00478 16.9562 10.4744 16.9562C13.937 16.9562 17.9851 14.3338 18.6471 10.0056H20.6075C20.6816 10.0012 20.7532 9.97779 20.8157 9.93766C20.8781 9.89754 20.9291 9.84204 20.9639 9.77649C20.9918 9.70692 21.004 9.63205 20.9996 9.55724C20.9952 9.48242 20.9743 9.4095 20.9385 9.34367Z"
+                      fill="#A3A1A1" />
+                    <path
+                      d="M5.25582 7.17973C5.22334 7.11758 5.17625 7.06425 5.11859 7.02433C5.06094 6.98442 4.99445 6.95911 4.92484 6.95059H3.14264C3.77914 3.13158 7.41992 0.763801 10.526 0.763801C12.7411 0.763801 15.0834 1.96042 16.5091 3.819C16.5333 3.87125 16.569 3.91735 16.6135 3.95386C16.658 3.99038 16.7102 4.01635 16.7662 4.02985C16.8222 4.04334 16.8805 4.04401 16.9367 4.0318C16.993 4.01959 17.0458 3.99482 17.0911 3.95934C17.1364 3.92386 17.1732 3.87858 17.1985 3.82691C17.2239 3.77523 17.2373 3.71848 17.2376 3.66091C17.238 3.60334 17.2253 3.54643 17.2006 3.49445C17.1758 3.44247 17.1396 3.39675 17.0947 3.36072C15.5162 1.29846 12.9957 0 10.526 0C7.06348 0 3.01534 2.62238 2.35338 6.95059H0.392957C0.318885 6.95502 0.247197 6.97843 0.184778 7.01855C0.122358 7.05868 0.0713037 7.11418 0.0365165 7.17973C0.00864652 7.2493 -0.00352227 7.32416 0.000878741 7.39898C0.00527975 7.4738 0.026142 7.54672 0.0619765 7.61255L2.32792 10.8969C2.36614 10.9496 2.41575 10.993 2.47305 11.0238C2.53035 11.0547 2.59388 11.0722 2.6589 11.0751C2.72042 11.0722 2.78034 11.0545 2.83354 11.0235C2.88673 10.9925 2.93164 10.949 2.96442 10.8969L5.23036 7.61255C5.2662 7.54672 5.28706 7.4738 5.29146 7.39898C5.29586 7.32416 5.28369 7.2493 5.25582 7.17973Z"
+                      fill="#A3A1A1" />
+                  </svg>
 
+                  <span>Costing</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="costing.html">Costing</a></li>
+                </ul>
+              </li>
 
+              <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                    data-feather="folder"></i><span>Projects & Timeline</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="projects-timelines.html">Projects
+                      & Timeline</a></li>
+                </ul>
+              </li>
 
+              <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                    data-feather="file"></i><span>Invoices</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="invoices.html">Invoices</a></li>
+                </ul>
+              </li>
 
+              <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                    data-feather="bell"></i><span>Notifications</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="notifications.html">Notifications</a></li>
+                </ul>
+              </li>
 
+              <li class="menu-header">Help & Support</li>
+              <li class="dropdown">
+                <a href="#" class="nav-link"><i data-feather="help-circle"></i><span>Help
+                    & Center</span></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="nav-link"><i data-feather="settings"></i><span>Settings</span></a>
+              </li>
 
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="truck"></i><span>Shipment</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="shipment.html">Shipment</a></li>
-              </ul>
-            </li>
+              <li class="dropdown mt-1">
+                <a href="login.html" class="nav-link"><i data-feather="log-out"></i><span>Logout</span></a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+          <section class="section container">
 
-
-
-
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="users"></i><span>Team</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="team.html">Team</a></li>
-              </ul>
-            </li>
-
-
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown">
-
-<svg class="feather" width="21" height="17" viewBox="0 0 21 17" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.4097 6.18665C12.511 6.18665 12.6081 6.14642 12.6798 6.0748C12.7514 6.00318 12.7916 5.90604 12.7916 5.80475C12.7916 5.70347 12.7514 5.60633 12.6798 5.53471C12.6081 5.46309 12.511 5.42285 12.4097 5.42285H8.59071C8.48942 5.42285 8.39228 5.46309 8.32066 5.53471C8.24904 5.60633 8.20881 5.70347 8.20881 5.80475C8.20881 5.90604 8.24904 6.00318 8.32066 6.0748C8.39228 6.14642 8.48942 6.18665 8.59071 6.18665H9.68549C9.94106 6.16539 10.1965 6.2286 10.4127 6.36658C10.6289 6.50456 10.7938 6.70969 10.8821 6.95045H8.59071C8.48942 6.95045 8.39228 6.99069 8.32066 7.06231C8.24904 7.13393 8.20881 7.23107 8.20881 7.33235C8.20881 7.43364 8.24904 7.53078 8.32066 7.6024C8.39228 7.67402 8.48942 7.71425 8.59071 7.71425H10.8821C10.7039 8.22345 10.2456 8.73265 9.68549 8.73265H8.59071C8.51363 8.72472 8.43607 8.74211 8.36976 8.7822C8.30346 8.82229 8.25202 8.8829 8.22325 8.95484C8.19447 9.02678 8.18992 9.10614 8.21028 9.1809C8.23065 9.25566 8.27482 9.32175 8.33611 9.36915L11.0603 11.9406C11.0939 11.9736 11.1337 11.9995 11.1774 12.017C11.2211 12.0345 11.2679 12.0431 11.3149 12.0425C11.4213 12.0383 11.5219 11.9926 11.595 11.9152C11.6324 11.8841 11.6625 11.8452 11.6831 11.8012C11.7038 11.7572 11.7145 11.7092 11.7145 11.6606C11.7145 11.6119 11.7038 11.5639 11.6831 11.5199C11.6625 11.4759 11.6324 11.437 11.595 11.406L9.55819 9.49645H9.68549C10.174 9.48286 10.6418 9.29622 11.0055 8.96981C11.3692 8.64341 11.6052 8.19845 11.6714 7.71425H12.4097C12.511 7.71425 12.6081 7.67402 12.6798 7.6024C12.7514 7.53078 12.7916 7.43364 12.7916 7.33235C12.7916 7.23107 12.7514 7.13393 12.6798 7.06231C12.6081 6.99069 12.511 6.95045 12.4097 6.95045H11.6714C11.5865 6.67179 11.4482 6.41235 11.264 6.18665H12.4097Z" fill="#A3A1A1"/>
-<path d="M20.9385 9.34367L18.6725 6.05933C18.6344 6.01157 18.5859 5.97301 18.5309 5.94651C18.4758 5.92001 18.4154 5.90625 18.3543 5.90625C18.2931 5.90625 18.2328 5.92001 18.1777 5.94651C18.1226 5.97301 18.0742 6.01157 18.036 6.05933L15.7701 9.34367C15.7342 9.4095 15.7134 9.48242 15.709 9.55724C15.7046 9.63205 15.7168 9.70692 15.7446 9.77649C15.7771 9.83864 15.8242 9.89197 15.8819 9.93188C15.9395 9.9718 16.006 9.99711 16.0756 10.0056H17.8578C17.2213 13.8246 13.5805 16.1924 10.4744 16.1924C8.25938 16.1924 5.91706 14.9958 4.49129 13.1372C4.46711 13.085 4.43143 13.0389 4.38692 13.0024C4.3424 12.9658 4.29021 12.9399 4.23425 12.9264C4.17828 12.9129 4.11998 12.9122 4.06372 12.9244C4.00746 12.9366 3.95469 12.9614 3.90935 12.9969C3.86401 13.0324 3.82728 13.0776 3.80191 13.1293C3.77653 13.181 3.76317 13.2377 3.76282 13.2953C3.76247 13.3529 3.77515 13.4098 3.79989 13.4618C3.82463 13.5137 3.86081 13.5595 3.90571 13.5955C5.48424 15.6578 8.00478 16.9562 10.4744 16.9562C13.937 16.9562 17.9851 14.3338 18.6471 10.0056H20.6075C20.6816 10.0012 20.7532 9.97779 20.8157 9.93766C20.8781 9.89754 20.9291 9.84204 20.9639 9.77649C20.9918 9.70692 21.004 9.63205 20.9996 9.55724C20.9952 9.48242 20.9743 9.4095 20.9385 9.34367Z" fill="#A3A1A1"/>
-<path d="M5.25582 7.17973C5.22334 7.11758 5.17625 7.06425 5.11859 7.02433C5.06094 6.98442 4.99445 6.95911 4.92484 6.95059H3.14264C3.77914 3.13158 7.41992 0.763801 10.526 0.763801C12.7411 0.763801 15.0834 1.96042 16.5091 3.819C16.5333 3.87125 16.569 3.91735 16.6135 3.95386C16.658 3.99038 16.7102 4.01635 16.7662 4.02985C16.8222 4.04334 16.8805 4.04401 16.9367 4.0318C16.993 4.01959 17.0458 3.99482 17.0911 3.95934C17.1364 3.92386 17.1732 3.87858 17.1985 3.82691C17.2239 3.77523 17.2373 3.71848 17.2376 3.66091C17.238 3.60334 17.2253 3.54643 17.2006 3.49445C17.1758 3.44247 17.1396 3.39675 17.0947 3.36072C15.5162 1.29846 12.9957 0 10.526 0C7.06348 0 3.01534 2.62238 2.35338 6.95059H0.392957C0.318885 6.95502 0.247197 6.97843 0.184778 7.01855C0.122358 7.05868 0.0713037 7.11418 0.0365165 7.17973C0.00864652 7.2493 -0.00352227 7.32416 0.000878741 7.39898C0.00527975 7.4738 0.026142 7.54672 0.0619765 7.61255L2.32792 10.8969C2.36614 10.9496 2.41575 10.993 2.47305 11.0238C2.53035 11.0547 2.59388 11.0722 2.6589 11.0751C2.72042 11.0722 2.78034 11.0545 2.83354 11.0235C2.88673 10.9925 2.93164 10.949 2.96442 10.8969L5.23036 7.61255C5.2662 7.54672 5.28706 7.4738 5.29146 7.39898C5.29586 7.32416 5.28369 7.2493 5.25582 7.17973Z" fill="#A3A1A1"/>
-</svg>
-
-                <span>Costing</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="costing.html">Costing</a></li>
-              </ul>
-            </li>
-
-
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="folder"></i><span>Projects & Timeline</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="projects-timelines.html">Projects & Timeline</a></li>
-              </ul>
-            </li>
-
-
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="file"></i><span>Invoices</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="invoices.html">Invoices</a></li>
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="bell"></i><span>Notifications</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="notifications.html">Notifications</a></li>
-              </ul>
-            </li>
-
-
-            <li class="menu-header">Help & Support</li>
-            <li class="dropdown">
-              <a href="#" class="nav-link"><i data-feather="help-circle"></i><span>Help & Center</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link"><i data-feather="settings"></i><span>Settings</span></a>
-            </li>
-
-            <li class="dropdown mt-1">
-              <a href="login.html" class="nav-link"><i data-feather="log-out"></i><span>Logout</span></a>
-            </li>
-          </ul>
-        </aside>
-      </div>
-      <!-- Main Content -->
-      <div class="main-content">
-        <section class="section container">
-
-          <div class="row">
-            <div class="col-12 mb-4 px-4">
+            <div class="row">
+              <div class="col-12 mb-4 px-4">
                 <div class="h2 page-main-heading">Dealer Details</div>
                 <div>KYC (Know Your Customer) for New Customers </div>
+              </div>
             </div>
-          </div>
 
-        <div class="row">
-          <div class="col-12 p-4 m-auto custom-form">
-           
-            <div class="custom-nav-tabs">
-              <ul class="nav nav-pills" id="myTabNew" role="tablist">
-                  <li class="nav-item">
-                      <a class="nav-link active" id="tab1" href="#content1" role="tab" aria-controls="content1" aria-selected="true" disabled>KYC For New Customers</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" id="tab2" href="#content2" role="tab" aria-controls="content2" aria-selected="false" disabled>For Orders</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" id="tab3" href="#content3" role="tab" aria-controls="content3" aria-selected="false" disabled>Bank details</a>
-                  </li>
-              </ul>
-              <div class="tab-content" id="myTabContentNew">
-                  <div class="tab-pane fade active show" id="content1" role="tabpanel" aria-labelledby="tab1">
-                    
-                    <div class="my-5">
+            <div class="row">
+              <div class="col-12 p-4 m-auto custom-form">
 
-                     
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Company Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                <div class="custom-nav-tabs">
+                  <ul class="nav nav-pills" id="myTabNew" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="tab1" href="#content1"
+                        role="tab" aria-controls="content1" aria-selected="true"
+                        disabled>KYC For New Customers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="tab2" href="#content2" role="tab"
+                        aria-controls="content2" aria-selected="false" disabled>For
+                        Orders</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="tab3" href="#content3" role="tab"
+                        aria-controls="content3" aria-selected="false" disabled>Bank
+                        details</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContentNew">
+                    <div class="tab-pane fade active show" id="content1"
+                      role="tabpanel" aria-labelledby="tab1">
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Communication /
-                          Delivery Address<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                      <div class="my-5">
 
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Company Name<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Land Line No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Communication /
+                            Delivery Address<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Land Line No<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mail ID<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Mail ID<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
                         <div class="float-right">
-                          <a href="#" class="btn btn-outline-dark next-button" data-next="content2">Next</a>
+                          <a href="#" class="btn btn-outline-dark next-button"
+                            data-next="content2">Next</a>
+                        </div>
+
                       </div>
 
                     </div>
-                   
+                    <div class="tab-pane fade" id="content2" role="tabpanel"
+                      aria-labelledby="tab2">
+                      <div class="my-5">
 
+                        <div class="text-center mb-4">
+                          <div class="h5 text-dark">(A) For Orders</div>
+                        </div>
 
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Name<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Designation<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Mobile No<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                    
-                  </div>
-                  <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
-                    <div class="my-5">
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Mail ID<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                      <div class="text-center mb-4">
-                        <div class="h5 text-dark">(A) For Orders</div>
-                      </div>
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div class="text-center mb-4">
+                          <div class="h5 text-dark">(B) For Orders</div>
+                        </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Designation<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Name<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Designation<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mobile No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Mobile No<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mail ID<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="text-center mb-4">
-                        <div class="h5 text-dark">(B) For Orders</div>
-                      </div>
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Designation<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mobile No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Mail ID<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Mail ID<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
                         <div class="float-right">
-                          <a href="#" class="btn btn-outline-dark next-button" data-next="content3">Next</a>
-                      </div>
+                          <a href="#" class="btn btn-outline-dark next-button"
+                            data-next="content3">Next</a>
+                        </div>
 
+                      </div>
                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">
-                    <div class="my-5">
+                    <div class="tab-pane fade" id="content3" role="tabpanel"
+                      aria-labelledby="tab3">
+                      <div class="my-5">
 
-                      <div class="text-center mb-4">
-                        <div class="h5 text-dark">CIN (Only for Companies)</div>
-                      </div>
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>GSTN<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div class="text-center mb-4">
+                          <div class="h5 text-dark">CIN (Only for Companies)</div>
+                        </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Income Tax Pan<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>GSTN<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Income Tax Pan<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
+                        <div class="text-center mb-4">
+                          <div class="h5 text-dark">Bank Details</div>
+                        </div>
 
-                      <div class="text-center mb-4">
-                        <div class="h5 text-dark">Bank Details</div>
-                      </div>
-                    
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Bank Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Bank Name<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Branch Name<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Branch Name<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Address<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Address<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Account No<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>Type of Account<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Account No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div
+                          class="d-flex flex-column flex-md-row align-items-center mb-4">
+                          <label>IFSC No<span>*</span>
+                          </label>
+                          <input type="text" class="form-control" name id>
+                        </div>
 
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>Type of Account<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
+                        <div class="d-flex justify-content-end">
+                          <div class="footer-card">
+                            <div class="upload-text mb-3">Upload Your Cancelled
+                              Check Leaf</div>
 
-
-                      <div class="d-flex flex-column flex-md-row align-items-center mb-4">
-                        <label>IFSC No<span>*</span>
-                        </label>
-                        <input type="text" class="form-control" name="" id="">
-                      </div>
-
-
-                      <div class="d-flex justify-content-end">
-                        <div class="footer-card">
-                            <div class="upload-text mb-3">Upload Your Cancelled Check Leaf</div>
-                
                             <div class="row">
-                                <div class="col-sm-6 mb-4">
-                                    <div>Cancelled Check Leaf<span>*</span></div>
-                                    <input id="check-leaf" type="file" class="d-none" onchange="displayFileName('check-leaf', 'check-leaf-label')">
-                                    <div>
-                                        <label class="browse-file-label text-center" for="check-leaf">
-                                            <div>Browse</div>
-                                        </label>
-                                    </div>
-                                    <div id="check-leaf-label"></div>
+                              <div class="col-sm-6 mb-4">
+                                <div>Cancelled Check Leaf<span>*</span></div>
+                                <input id="check-leaf" type="file"
+                                  class="d-none"
+                                  onchange="displayFileName('check-leaf', 'check-leaf-label')">
+                                <div>
+                                  <label class="browse-file-label text-center"
+                                    for="check-leaf">
+                                    <div>Browse</div>
+                                  </label>
                                 </div>
-                                <div class="col-sm-6 mb-4">
-                                    <div>GST Certificate<span>*</span></div>
-                                    <input id="gst-certificate" type="file" class="d-none" onchange="displayFileName('gst-certificate', 'gst-certificate-label')">
-                
-                                    <div>
-                                        <label class="browse-file-label text-center" for="gst-certificate">
-                                            <div>Browse</div>
-                                        </label>
-                                    </div>
-                                    <div id="gst-certificate-label"></div>
+                                <div id="check-leaf-label"></div>
+                              </div>
+                              <div class="col-sm-6 mb-4">
+                                <div>GST Certificate<span>*</span></div>
+                                <input id="gst-certificate" type="file"
+                                  class="d-none"
+                                  onchange="displayFileName('gst-certificate', 'gst-certificate-label')">
+
+                                <div>
+                                  <label class="browse-file-label text-center"
+                                    for="gst-certificate">
+                                    <div>Browse</div>
+                                  </label>
                                 </div>
+                                <div id="gst-certificate-label"></div>
+                              </div>
                             </div>
                             <div>
-                                <a href="#" class="btn finish-button">Continue</a>
+                              <a href="#" class="btn finish-button">Continue</a>
                             </div>
-                        </div>                         
-                    </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-              </div>
-          </div>
-      
-            
+                </div>
 
-          </div>
+              </div>
+
+            </div>
+
+          </section>
 
         </div>
+        <footer class="main-footer">
 
-
-          
-        </section>
-        
-      </div>
-      <footer class="main-footer">
-          
-
-
-       <div class="col-12 text-center ">
+          <div class="col-12 text-center ">
             <div>DMS Dashboard © 2023 All Rights Reserved. Developed by BBIT</div>
           </div>
-      </footer>
+        </footer>
+      </div>
     </div>
-  </div>
-  <!-- General JS Scripts -->
-  <script src="assets/js/app.min.js"></script>
-  <!-- JS Libraies -->
-  <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
-  <!-- Page Specific JS File -->
-  <script src="assets/js/page/index.js"></script>
-  <!-- Template JS File -->
-  <script src="assets/js/scripts.js"></script>
-  <!-- Custom JS File -->
-  <script src="assets/js/custom.js"></script>
+    <!-- General JS Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/index.js"></script>
+    <!-- Template JS File -->
+    <script src="assets/js/scripts.js"></script>
+    <!-- Custom JS File -->
+    <script src="assets/js/custom.js"></script>
 
-  <script>
+    <script>
+    // $(document).ready(function () {
+    //     $(".next-button").click(function () {
+    //         var nextTabId = $(this).data("next");
+    //         $('a[href="#' + nextTabId + '"]').tab('show');
+    //     });
+    // });
+
+
     $(document).ready(function () {
+        var activeTabIndex = 0; // Initialize the active tab index to 0
+
         $(".next-button").click(function () {
             var nextTabId = $(this).data("next");
+
+            // Remove the custom class from the previously active tab (if any)
+            if (activeTabIndex > 0) {
+                $('a[aria-controls="content' + activeTabIndex + '"]').removeClass("custom-class");
+            }
+
+            // Show the next tab
             $('a[href="#' + nextTabId + '"]').tab('show');
+
+            // Add the custom class to the currently active tab
+            activeTabIndex++;
+            $('a[aria-controls="' + nextTabId + '"]').addClass("activated-ta");
         });
     });
+
 </script>
 
-<script>
+    <script>
   function displayFileName(inputId, labelId) {
       const inputElement = document.getElementById(inputId);
       const labelElement = document.getElementById(labelId);
@@ -611,7 +690,6 @@
       }
   }
 </script>
-</body>
-
+  </body>
 
 </html>
