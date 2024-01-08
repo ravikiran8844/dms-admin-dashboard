@@ -48,8 +48,10 @@
                        </button>
                    
                     </div>
-                    <div class="text-center mt-3">
-                        <div class="otp-not-received-text">Don’t received code?  <span ><a href="#" class="resend-otp-text">Resend</a></span></div>
+                    <div id="resendContainer">
+                        <div class="text-center mt-3">
+                            <div class="otp-not-received-text">Didn’t receive the code? <span id="resendLinkContainer"><a href="#" class="resend-otp-text">Resend</a></span></div>
+                        </div>
                     </div>
 
                    
@@ -61,7 +63,43 @@
         </div>
     </main>
     
-
+    <script>
+        // Set the initial timer value to 30 seconds
+        let timerSeconds = 30;
+    
+        // Function to update the timer text
+        function updateTimerText() {
+            document.getElementById('resendLinkContainer').innerHTML = `Resend in <span class="text-warning">${timerSeconds} seconds</span>`;
+        }
+    
+        // Function to handle the countdown and show the "Resend" text element
+        function startResendTimer() {
+            // Update the timer text initially
+            updateTimerText();
+    
+            // Decrement the timer every second
+            const timerInterval = setInterval(() => {
+                timerSeconds--;
+    
+                // Update the timer text
+                updateTimerText();
+    
+                // If the timer reaches 0, show the "Resend" text element and clear the interval
+                if (timerSeconds === 0) {
+                    clearInterval(timerInterval);
+                    showResendText();
+                }
+            }, 1000);
+        }
+    
+        // Function to show the "Resend" text element
+        function showResendText() {
+            document.getElementById('resendLinkContainer').innerHTML = '<a href="#" class="resend-otp-text">Resend</a>';
+        }
+    
+        // Start the timer when the page loads or when needed
+        startResendTimer();
+    </script>
     <script>
         const inputs = document.getElementById("inputs");
   
