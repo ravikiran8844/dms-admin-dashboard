@@ -50,7 +50,9 @@
                     </div>
                     <div id="resendContainer">
                         <div class="text-center mt-3">
-                            <div class="otp-not-received-text">Didn’t receive the code? <span id="resendLinkContainer"><a href="#" class="resend-otp-text">Resend</a></span></div>
+                            <div class="otp-not-received-text">
+                                Didn’t receive the code? <span id="resendLinkContainer"><a href="#" class="resend-otp-text" onclick="restartTimer()">Resend</a></span>
+                            </div>
                         </div>
                     </div>
 
@@ -94,12 +96,25 @@
     
         // Function to show the "Resend" text element
         function showResendText() {
-            document.getElementById('resendLinkContainer').innerHTML = '<a href="#" class="resend-otp-text">Resend</a>';
+            const resendLinkContainer = document.getElementById('resendLinkContainer');
+            resendLinkContainer.innerHTML = '<a href="#" class="resend-otp-text" onclick="restartTimer()">Resend</a>';
         }
     
-        // Start the timer when the page loads or when needed
+        // Function to restart the timer
+        function restartTimer() {
+            // Reset the timerSeconds value
+            timerSeconds = 30;
+    
+            // Start the timer again
+            startResendTimer();
+        }
+    
+        // Start the timer when the page loads
         startResendTimer();
     </script>
+
+
+
     <script>
         const inputs = document.getElementById("inputs");
   
