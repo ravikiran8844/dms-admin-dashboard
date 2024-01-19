@@ -20,7 +20,7 @@
         <div class="container py-5">
             <div class="col-12 col-md-7 m-auto">
                 <div class="text-center mb-5">
-                    <img class="img-fluid" src="assets/img/logo.png" height="122" width="160" alt="">
+                    <img class="img-fluid" src="assets/img/logo-main.png" height="122" width="160" alt="">
                 </div>
                 <div>
                     <div class="dms_login_page_title mb-4 ">Enter OTP</div>
@@ -42,8 +42,12 @@
                         <input class="input" type="text" 
                             inputmode="numeric" maxlength="1" />
                     </div>
+
+                    <div id="error-message" class="mt-4 fw-bold text-danger text-center d-none">
+                        Wrong OTP. Please Enter Correct OTP
+                    </div>
                    
-                      <button class="mt-5 btn dms_login_page_button w-100 py-3">
+                      <button id="otp-verify_button" class="mt-5 btn dms_login_page_button w-100 py-3">
                         Continue
                        </button>
                    
@@ -66,12 +70,20 @@
     </main>
     
     <script>
-        // Set the initial timer value to 30 seconds
-        let timerSeconds = 30;
+        // Set the initial timer value to 5 minutes (300 seconds)
+        let timerSeconds = 300;
     
         // Function to update the timer text
         function updateTimerText() {
-            document.getElementById('resendLinkContainer').innerHTML = `Resend in <span class="text-warning">${timerSeconds} seconds</span>`;
+            // Calculate minutes and seconds
+            const minutes = Math.floor(timerSeconds / 60);
+            const seconds = timerSeconds % 60;
+    
+            // Format the timer values to display leading zero if needed
+            const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+            const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+    
+            document.getElementById('resendLinkContainer').innerHTML = `Resend in <span class="text-warning">${formattedMinutes}:${formattedSeconds}</span>`;
         }
     
         // Function to handle the countdown and show the "Resend" text element
@@ -102,17 +114,53 @@
     
         // Function to restart the timer
         function restartTimer() {
-            // Reset the timerSeconds value
-            timerSeconds = 30;
+            // Reset the timerSeconds value to 5 minutes (300 seconds)
+            timerSeconds = 300;
     
             // Start the timer again
             startResendTimer();
         }
     
+        // Validate entered OTP
+        function validateOTP() {
+            const inputs = document.getElementById("inputs");
+            const enteredOTP = Array.from(inputs.children)
+                .map(input => input.value)
+                .join("");
+    
+            const expectedOTP = "4453";
+            const isValidOTP = enteredOTP === expectedOTP;
+    
+            if (!isValidOTP) {
+                document.getElementById("error-message").classList.remove("d-none");
+                return false;
+            } else {
+                document.getElementById("error-message").classList.add("d-none");
+            }
+    
+            return true;
+        }
+    
+        const continueButton = document.querySelector('#otp-verify_button');
+        continueButton.disabled = true;
+    
+        document.getElementById("inputs").addEventListener('input', function () {
+            const isValidLength = Array.from(this.children).every(input => input.value.length === 1);
+            continueButton.disabled = !isValidLength;
+        });
+    
+        continueButton.addEventListener('click', function () {
+            if (validateOTP()) {
+                document.getElementById("error-message").classList.add("d-none");
+                // alert("OTP is valid. Continue with the next steps."); // Replace this with your desired action
+                window.location.href = 'https://oms-new.vercel.app';
+
+            }
+        });
+    
         // Start the timer when the page loads
         startResendTimer();
     </script>
-
 
 
     <script>

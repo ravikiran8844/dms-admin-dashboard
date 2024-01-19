@@ -75,8 +75,8 @@ margin: auto;
 
 .dms_login_page_button,.dms_login_page_button:hover{
     border-radius: 4.264px;
-background: #F78D1E;
-color: #FFF;
+background: #F78D1E !important;
+color: #FFF !important;
 text-align: center;
 font-family: Inter;
 font-size: 16px;
