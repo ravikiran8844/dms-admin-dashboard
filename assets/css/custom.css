@@ -376,7 +376,7 @@ height: auto !important;
 }
 .main-sidebar .sidebar-brand a .header-logo {
  height:auto;
- max-height: 93px;
+ /* max-height: 93px; */
  max-width: 100%;
  padding: 0;
  margin: 30px 0;
@@ -1083,3 +1083,21 @@ line-height: normal;
         height: 14px;
         flex-shrink: 0;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .navbar{
+        flex-wrap: nowrap !important;
+    }
+
