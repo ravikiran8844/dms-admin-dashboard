@@ -45,11 +45,14 @@
                         </div>
                         <input type="text" class="login-phone-input form-control border-0  bg-transparent" id="validationDefaultUsername" placeholder="Enter phone number" required>
                       </div>
-                   
-                      <button class="mt-5 btn dms_login_page_button w-100 py-3">
-                        Continue
-                       </button>
-                   
+
+                                  
+                      <button type="button" class="btn btn-primary spinner-button mt-5 btn dms_login_page_button w-100" data-bs-toggle="button" style="height: 50px;">
+                        <span>Continue</span> <span class="spinner-border text-light d-none" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </span>
+                      </button>
+                      
                     </div>
 
                    
@@ -60,8 +63,32 @@
 
         </div>
     </main>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script>
+
+
+            const button = document.querySelector('.spinner-button');
+            const submitText = button.querySelector('span'); // Get the submit text element
+
+            button.addEventListener('click', function () {
+            const spinner = button.querySelector('.spinner-border');
+
+            // Hide submit text and show spinner
+            submitText.style.display = 'none';
+            spinner.classList.remove('d-none');
+
+            // Simulate loading process - replace with your actual task
+            setTimeout(() => {
+                // Hide spinner and show submit text again
+                spinner.classList.add('d-none');
+                submitText.style.display = '';
+            }, 2000);
+            });
+
+    </script>
+
 
 </body>
 </html>
