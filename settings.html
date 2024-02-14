@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- profile.html  21 Nov 2019 03:49:30 GMT -->
+<!-- blank.html  21 Nov 2019 03:54:41 GMT -->
 
 <head>
   <meta charset="UTF-8">
@@ -10,14 +10,16 @@
   <title>Emerald DMS Dashboard</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
-  <link rel="stylesheet" href="assets/bundles/bootstrap-social/bootstrap-social.css">
-  <link rel="stylesheet" href="assets/bundles/summernote/summernote-bs4.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/bundles/pretty-checkbox/pretty-checkbox.min.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+
+
+  </style>
 </head>
 
 <body>
@@ -321,267 +323,255 @@
           </ul>
         </aside>
       </div>
-
-
-
-
-
-      
       <!-- Main Content -->
-      <div class="main-content profile-page">
-        <div class="section">
+      <div class="main-content">
+        <section class="section">
           <div class="section-body">
-            <div class="row">
+            <!-- add content here -->
+
+
+
+            <div class="row settings-page">
               <div class="col-12 mb-4">
-                <div class="h2 page-main-heading">My Profile</div>
+                <div class="h2 page-main-heading">Admin Settings</div>
               </div>
 
-              <div class="col-12 mb-2">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between  flex-column flex-sm-row align-items-center">
-                      <div class="d-flex align-items-center flex-column flex-sm-row">
-                        <div class="mr-3">
-                          <div class="profile-page_img-wrapper d-flex justify-content-center align-items-center">
-                            <img id="user-profile-img" class="img-fluid rounded-5" src="assets/img/user-profile.png"
-                              alt="">
-                          </div>
 
-                        </div>
-                        <div>
-                          <div class="h3 fw-bold text-dark">Vishnu prasath</div>
-                          <div>Admin</div>
-                        </div>
-                      </div>
+              <div class="col-12 mb-5">
+                <div class="card p-3 py-4 h-100 m-auto">
 
-                      <div>
-                        <input id="profile-phone-edit-input" class="d-none" type="file" accept="image/*">
-                        <label for="profile-phone-edit-input" class="edit-btn">
-                          Edit Photo <span class="ml-1">
-                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M9.0629 9.88692C9.0629 10.518 8.54538 11.0356 7.91426 11.0356H2.10794C1.47682 11.0356 0.959304 10.518 0.959304 9.88692V4.0806C0.959304 3.44948 1.47682 2.93196 2.10794 2.93196H4.96061L5.91992 1.97266H2.10794C0.946682 1.97266 0 2.91934 0 4.0806V9.89954C0 11.0608 0.946682 12.0075 2.10794 12.0075H7.92688C9.08815 12.0075 10.0348 11.0608 10.0348 9.89954V6.08757L9.07552 7.04687V9.88692H9.0629Z"
-                                fill="#7E7E7E" />
-                              <path
-                                d="M3.5849 5.64552C3.4713 5.75912 3.40819 5.89797 3.39557 6.04944L3.19361 8.47294C3.18098 8.64966 3.33245 8.80112 3.50917 8.7885L5.93267 8.58654C6.08414 8.57392 6.23561 8.51081 6.33659 8.39721L10.2243 4.5095L7.48523 1.75781L3.5849 5.64552Z"
-                                fill="#7E7E7E" />
-                              <path
-                                d="M11.8523 2.23732L9.75703 0.142002C9.56769 -0.0473341 9.27738 -0.0473341 9.08804 0.142002L8.14136 1.08868L10.893 3.84037L11.8397 2.89369C12.0417 2.71698 12.0417 2.41404 11.8523 2.23732Z"
-                                fill="#7E7E7E" />
-                            </svg>
-                          </span>
-                        </label>
-                      </div>
+                  <div class="d-flex align-items-center" style="gap: 10px;">
+                    <div>
+                      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.65232 0C8.72219 0 7.95402 0.768247 7.95402 1.69837V2.32569C7.45954 2.47955 6.98018 2.6779 6.52154 2.9184L6.07876 2.47561C5.42083 1.81768 4.33422 1.81768 3.6763 2.47561L2.47554 3.67637C1.81764 4.33429 1.81764 5.4209 2.47554 6.0788L2.91835 6.52161C2.67786 6.98025 2.47953 7.45956 2.32562 7.95402H1.6983C0.768177 7.95402 0 8.72227 0 9.65237V11.3519C0 12.282 0.768177 13.0502 1.6983 13.0502H2.32562C2.47948 13.5447 2.67786 14.024 2.91835 14.4826L2.47554 14.9254C1.81764 15.5834 1.81764 16.67 2.47554 17.3279L3.6763 18.5286C4.33422 19.1866 5.42083 19.1866 6.07876 18.5286L6.52154 18.0859C6.98018 18.3263 7.45954 18.5247 7.95402 18.6786V19.3059C7.95402 20.236 8.72219 21.0042 9.65232 21.0042H11.3519C12.282 21.0042 13.0502 20.236 13.0502 19.3059V18.6786C13.5446 18.5247 14.0239 18.3263 14.4826 18.0859L14.9254 18.5286C15.5833 19.1866 16.67 19.1866 17.3279 18.5286L18.5286 17.3279C19.1865 16.67 19.1865 15.5834 18.5286 14.9254L18.0858 14.4826C18.3263 14.024 18.5246 13.5447 18.6786 13.0502H19.3059C20.236 13.0502 21.0042 12.282 21.0042 11.3519V9.65237C21.0042 8.72227 20.236 7.95402 19.3059 7.95402H18.6822C18.5279 7.45879 18.329 6.97878 18.0879 6.51953L18.5286 6.0788C19.1865 5.42088 19.1865 4.33429 18.5286 3.67637L17.3279 2.47561C16.67 1.81768 15.5833 1.81768 14.9254 2.47561L14.4847 2.91632C14.0254 2.67517 13.5454 2.47629 13.0502 2.32197V1.69837C13.0502 0.768247 12.282 0 11.3519 0H9.65232ZM9.65232 1.23557H11.3519C11.6196 1.23557 11.8147 1.43054 11.8147 1.69837V2.78846C11.8147 2.92619 11.8607 3.05997 11.9454 3.16855C12.0302 3.27712 12.1488 3.35427 12.2824 3.38773C12.9832 3.56308 13.6543 3.84121 14.2739 4.21283C14.392 4.28368 14.5304 4.31302 14.6672 4.29618C14.8039 4.27934 14.931 4.2173 15.0285 4.1199L15.7991 3.3493C15.9882 3.16017 16.2651 3.16017 16.4542 3.3493L17.6549 4.55001C17.8441 4.73914 17.8441 5.01608 17.6549 5.2052L16.8844 5.97579C16.787 6.0732 16.7249 6.20037 16.7081 6.33708C16.6913 6.4738 16.7206 6.61222 16.7914 6.73035C17.163 7.34991 17.4411 8.02101 17.6165 8.72184C17.65 8.85546 17.7271 8.97406 17.8357 9.05881C17.9443 9.14356 18.0781 9.1896 18.2158 9.18962H19.3059C19.5737 9.18962 19.7687 9.38458 19.7687 9.65239V11.3519C19.7687 11.6197 19.5737 11.8147 19.3059 11.8147H18.212C18.0742 11.8147 17.9404 11.8608 17.8318 11.9456C17.7232 12.0303 17.6461 12.149 17.6126 12.2826C17.4375 12.9828 17.1601 13.6533 16.7893 14.2724C16.7186 14.3905 16.6893 14.5289 16.7062 14.6655C16.7231 14.8022 16.7851 14.9293 16.8825 15.0266L17.6549 15.7992C17.8441 15.9883 17.8441 16.2652 17.6549 16.4543L16.4542 17.655C16.2651 17.8442 15.9882 17.8442 15.7991 17.655L15.0265 16.8825C14.9292 16.7852 14.8021 16.7231 14.6654 16.7063C14.5288 16.6894 14.3904 16.7186 14.2723 16.7894C13.6532 17.1602 12.9827 17.4376 12.2825 17.6127C12.1489 17.6461 12.0303 17.7233 11.9455 17.8319C11.8607 17.9405 11.8147 18.0743 11.8147 18.212V19.3059C11.8147 19.5737 11.6197 19.7687 11.3519 19.7687H9.65232C9.38455 19.7687 9.18952 19.5737 9.18952 19.3059V18.212C9.18951 18.0743 9.14346 17.9405 9.05869 17.8319C8.97391 17.7233 8.85528 17.6461 8.72163 17.6127C8.0215 17.4376 7.35101 17.1602 6.73189 16.7894C6.61376 16.7186 6.47539 16.6894 6.33874 16.7063C6.20209 16.7231 6.075 16.7852 5.97763 16.8825L5.20511 17.655C5.01599 17.8442 4.73907 17.8442 4.54994 17.655L3.34923 16.4543C3.1601 16.2652 3.1601 15.9883 3.34923 15.7992L4.12175 15.0266C4.2191 14.9293 4.28114 14.8022 4.29802 14.6655C4.3149 14.5289 4.28565 14.3905 4.21491 14.2724C3.84406 13.6533 3.56665 12.9828 3.39161 12.2826C3.35818 12.149 3.28105 12.0303 3.17246 11.9456C3.06387 11.8608 2.93006 11.8147 2.79229 11.8147H1.69835C1.43058 11.8147 1.23557 11.6197 1.23557 11.3519V9.65239C1.23557 9.38463 1.43054 9.18962 1.69835 9.18962H2.79229C2.93006 9.1896 3.06387 9.14355 3.17246 9.05876C3.28105 8.97398 3.35818 8.85533 3.39161 8.72168C3.56672 8.02154 3.84406 7.3511 4.21491 6.73199C4.28565 6.61386 4.31491 6.47548 4.29803 6.33882C4.28115 6.20217 4.21911 6.07507 4.12175 5.9777L3.34923 5.2052C3.1601 5.01608 3.1601 4.73914 3.34923 4.55001L4.54994 3.3493C4.73907 3.16017 5.01599 3.16017 5.20511 3.3493L5.97763 4.12182C6.075 4.21917 6.20209 4.28121 6.33874 4.29809C6.47539 4.31497 6.61376 4.28572 6.73189 4.21498C7.35101 3.84413 8.0215 3.56672 8.72163 3.39165C8.85528 3.35822 8.97391 3.28108 9.05869 3.17249C9.14346 3.0639 9.18951 2.9301 9.18952 2.79234V1.69842C9.18952 1.43063 9.38448 1.23557 9.65232 1.23557ZM10.5021 5.21574C7.58982 5.21574 5.21571 7.58987 5.21571 10.5021C5.21571 13.4144 7.58982 15.7885 10.5021 15.7885C13.4144 15.7885 15.7885 13.4144 15.7885 10.5021C15.7885 7.58987 13.4144 5.21574 10.5021 5.21574ZM10.5021 6.45129C12.7466 6.45129 14.553 8.25762 14.553 10.5021C14.553 12.7467 12.7466 14.553 10.5021 14.553C8.25755 14.553 6.45124 12.7467 6.45124 10.5021C6.45124 8.25762 8.25755 6.45129 10.5021 6.45129Z"
+                          fill="#BEBEBE" />
+                      </svg>
                     </div>
 
+                    <div>
+                      Maintanance Mode
+                    </div>
+
+
+                    <div class="pretty p-switch p-fill">
+                      <input type="checkbox">
+                      <div class="state">
+                        <label></label>
+                      </div>
+                    </div>
                   </div>
 
                 </div>
-
               </div>
 
 
 
+              <div class="col-12">
+                <ul class="nav nav-pills" id="myTab3" role="tablist" style="gap: 10px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="Admin-tab3" data-toggle="tab" href="#Admin3" role="tab"
+                      aria-controls="Admin" aria-selected="true"><i class="fas fa-user"></i> Admin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="Order-tab3" data-toggle="tab" href="#Order3" role="tab"
+                      aria-controls="Order" aria-selected="false"><i class="fab fa-empire"></i> Order No</a>
+                  </li>
+                </ul>
 
-              <div id="personal-information" class="col-12 mb-2">
-                <div class="card">
-                  <div class="card-header py-4">
-                    <div class="h3 fw-bold text-dark">Personal Information</div>
 
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-12 col-lg-8">
+                <div class="tab-content" id="myTabContent2">
+                  <div class="tab-pane fade show active" id="Admin3" role="tabpanel" aria-labelledby="Admin-tab3">
+                    <div class="card mt-4">
+                      <div class="card-body">
+
+
                         <div class="row">
-                          <div class="col-6">
-                            <div class="mb-4">
-                              <label class="form-label h6 text-dark" for="first-name">First Name</label>
-                              <input class="form-control" type="text" name="" id="first-name" disabled value="Vishnu">
-                            </div>
+                          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <label class="form-label" for="otp-length">OTP Length<span
+                                class="text-danger">*</span></label>
+                            <input id="otp-length" class="form-control" type="text" name="" placeholder="OTP Length">
                           </div>
-                          <div class="col-6">
-                            <div class="mb-4">
-                              <label class="form-label h6 text-dark" for="last-name">Last Name</label>
-                              <input class="form-control" type="text" name="" id="last-name" disabled value="prasath">
+                          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <label class="form-label" for="otp-expiry">OTP Expiry Duration(mins)<span
+                                class="text-danger">*</span></label>
+                            <input id="otp-expiry" class="form-control" type="text" name=""
+                              placeholder="OTP Expiry Duration">
+                          </div>
+
+                          <div class="col-12 col-md-6 col-lg-6 mb-4 mb-lg-0">
+                            <label class="form-label" for="company-logo">Company Logo<span
+                                class="text-danger">*</span></label>
+                            <div class="d-flex" style="gap:20px">
+                              <div class="custom-file">
+                                <input id="company-logo" type="file" class="custom-file-input" accept="image/*"
+                                  onchange="previewImage(event)">
+                                <label class="custom-file-label" id="file-label" for="customFile">Choose file</label>
+                              </div>
+                              <div>
+                                <img class="img-fluid" id="preview" src="assets/img/logo-main.png" width="60"
+                                  height="60" alt="logo">
+                              </div>
                             </div>
                           </div>
 
-                          <div class="col-6">
-                            <div class="mb-4">
-                              <label class="form-label h6 text-dark" for="email-address">Email address</label>
-                              <input class="form-control" type="email" name="" id="email-address" disabled
-                                value="vishnuprasath@eji.com">
-                            </div>
-                          </div>
-
-                          <div class="col-6">
-                            <div class="mb-4">
-                              <label class="form-label h6 text-dark" for="phone">Phone</label>
-                              <input class="form-control" type="text" name="" id="phone" disabled value="9876512348">
-                            </div>
-                          </div>
-
-                          <div class="col-6">
-                            <div class="mb-4">
-                              <label class="form-label h6 text-dark" for="Admin">Bio</label>
-                              <input class="form-control" type="text" name="" id="Admin" disabled value="Admin">
-                            </div>
-                          </div>
                         </div>
+
 
 
                       </div>
-                      <div class="col-12 col-lg-4 mt-2">
-                        <div class="ml-auto ">
-                          <button id="personal-info-edit" class="edit-btn">Edit <span class="ml-1">
-                              <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M9.0629 9.88692C9.0629 10.518 8.54538 11.0356 7.91426 11.0356H2.10794C1.47682 11.0356 0.959304 10.518 0.959304 9.88692V4.0806C0.959304 3.44948 1.47682 2.93196 2.10794 2.93196H4.96061L5.91992 1.97266H2.10794C0.946682 1.97266 0 2.91934 0 4.0806V9.89954C0 11.0608 0.946682 12.0075 2.10794 12.0075H7.92688C9.08815 12.0075 10.0348 11.0608 10.0348 9.89954V6.08757L9.07552 7.04687V9.88692H9.0629Z"
-                                  fill="#7E7E7E" />
-                                <path
-                                  d="M3.5849 5.64552C3.4713 5.75912 3.40819 5.89797 3.39557 6.04944L3.19361 8.47294C3.18098 8.64966 3.33245 8.80112 3.50917 8.7885L5.93267 8.58654C6.08414 8.57392 6.23561 8.51081 6.33659 8.39721L10.2243 4.5095L7.48523 1.75781L3.5849 5.64552Z"
-                                  fill="#7E7E7E" />
-                                <path
-                                  d="M11.8523 2.23732L9.75703 0.142002C9.56769 -0.0473341 9.27738 -0.0473341 9.08804 0.142002L8.14136 1.08868L10.893 3.84037L11.8397 2.89369C12.0417 2.71698 12.0417 2.41404 11.8523 2.23732Z"
-                                  fill="#7E7E7E" />
-                              </svg>
-                            </span>
-                          </button>
+                    </div>
+
+
+                    <div class="d-flex select-zones">
+                      <div>
+                        <input id="east-zone" type="radio" name="zones">
+                        <label for="east-zone">East Zone</label>
+                      </div>
+                      <div>
+                        <input id="west-zone" checked type="radio" name="zones">
+                        <label for="west-zone">West Zone</label>
+                      </div>
+                      <div>
+                        <input id="north-zone" type="radio" name="zones">
+                        <label for="north-zone">North Zone</label>
+                      </div>
+                      <div>
+                        <input id="south-zone" type="radio" name="zones">
+                        <label for="south-zone">South Zone</label>
+                      </div>
+                    </div>
+
+
+                    <div class="card mt-4">
+                      <div class="card-body">
+
+
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <label class="form-label" for="">Zone Name<span class="text-danger">*</span></label>
+                            <input id="" class="form-control" type="text" name="" placeholder="Zone Name">
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <label class="form-label" for="">Zone Incharge Name<span
+                                class="text-danger">*</span></label>
+                            <input id="" class="form-control" type="text" name="" placeholder="Incharge Name">
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <label class="form-label" for="">Zone Incharge Mobile No<span
+                                class="text-danger">*</span></label>
+                            <input id="" class="form-control" type="text" name="" placeholder="Incharge Mobile No">
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <label class="form-label" for="">Zone Incharge Email<span
+                                class="text-danger">*</span></label>
+                            <input id="" class="form-control" type="text" name="" placeholder="Incharge Email">
+                          </div>
+
+
+
                         </div>
+
+
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="tab-pane fade" id="Order3" role="tabpanel" aria-labelledby="Order-tab3">
+                    <div class="card mt-4">
+                      <div class="card-body">
+
+
+                        <div class="row">
+                          <div class="col-12 col-lg-2 mb-4 mb-lg-0 d-flex align-items-center">
+                            <div class="select-zones__tab-item-title">Order</div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                            <label class="form-label" for="">Prefix*<span class="text-danger">*</span></label>
+                            <input id="" class="form-control" type="text" name="" placeholder="Prefix">
+                          </div>
+                          <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                            <label class="form-label" for="">Length<span
+                                class="text-danger">*</span></label>
+                            <input id="" class="form-control" type="text" name="" placeholder="Length">
+                          </div>
+                          <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                            <label class="form-label" for="">Live<span
+                                class="text-danger">*</span></label>
+                            <input id="" class="form-control" type="text" name="" placeholder="Live">
+                          </div>
+                          <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                            <label class="form-label" for="">Example<span
+                                class="text-danger">*</span></label>
+                            <input id="" class="form-control" type="text" name="" placeholder="Order 001">
+                          </div>
+
+
+
+                        </div>
+
+
+
                       </div>
                     </div>
                   </div>
+
                 </div>
+
+
+
+
+
               </div>
+
             </div>
+
+
+
+
           </div>
+        </section>
 
-
-
-
-          <div class="row">
-            <div id="edit-password-card" class="col-12 mb-2">
-              <div class="card">
-                <div class="card-header py-4">
-                  <div class="h3 fw-bold text-dark">Password</div>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-12 col-lg-8">
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="mb-4">
-                            <label class="form-label h6 text-dark" for="password">Password</label>
-                            <input class="form-control" type="password" name="" id="password" disabled value="123456">
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="mb-4">
-                            <label class="form-label h6 text-dark" for="confirm-password">Confirm Password</label>
-                            <input class="form-control" type="password" name="" id="confirm-password" disabled
-                              value="123456">
-                          </div>
-                        </div>
-
-                      </div>
-
-
-                    </div>
-                    <div class="col-12 col-lg-4 mt-2">
-                      <div class="ml-auto">
-                        <button id="edit-password-btn" class="edit-btn">Edit <span class="ml-1">
-                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M9.0629 9.88692C9.0629 10.518 8.54538 11.0356 7.91426 11.0356H2.10794C1.47682 11.0356 0.959304 10.518 0.959304 9.88692V4.0806C0.959304 3.44948 1.47682 2.93196 2.10794 2.93196H4.96061L5.91992 1.97266H2.10794C0.946682 1.97266 0 2.91934 0 4.0806V9.89954C0 11.0608 0.946682 12.0075 2.10794 12.0075H7.92688C9.08815 12.0075 10.0348 11.0608 10.0348 9.89954V6.08757L9.07552 7.04687V9.88692H9.0629Z"
-                                fill="#7E7E7E" />
-                              <path
-                                d="M3.5849 5.64552C3.4713 5.75912 3.40819 5.89797 3.39557 6.04944L3.19361 8.47294C3.18098 8.64966 3.33245 8.80112 3.50917 8.7885L5.93267 8.58654C6.08414 8.57392 6.23561 8.51081 6.33659 8.39721L10.2243 4.5095L7.48523 1.75781L3.5849 5.64552Z"
-                                fill="#7E7E7E" />
-                              <path
-                                d="M11.8523 2.23732L9.75703 0.142002C9.56769 -0.0473341 9.27738 -0.0473341 9.08804 0.142002L8.14136 1.08868L10.893 3.84037L11.8397 2.89369C12.0417 2.71698 12.0417 2.41404 11.8523 2.23732Z"
-                                fill="#7E7E7E" />
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-12">
-            <button class="btn custom-orange-button">Update</button>
-          </div>
       </div>
-
-
-
-
-
+      <footer class="main-footer">
+        <div class="col-12 text-center ">
+          <div>DMS Dashboard © 2024 All Rights Reserved. Developed by BBIT</div>
+        </div>
+      </footer>
     </div>
-  </div>
-
-  </div>
-  <footer class="main-footer">
-    <div class="col-12 text-center ">
-      <div>DMS Dashboard © 2024 All Rights Reserved. Developed by BBIT</div>
-    </div>
-  </footer>
-  </div>
   </div>
   <!-- General JS Scripts -->
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
-  <script src="assets/bundles/summernote/summernote-bs4.js"></script>
-  <!-- Page Specific JS File -->
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
 
-
-
   <script>
-    // Get references to the input and image elements
-    const $inputElement = $('#profile-phone-edit-input');
-    const $imageElement = $('#user-profile-img');
+    function previewImage(event) {
+      const input = event.target;
+      const img = document.getElementById('preview');
+      const label = document.getElementById('file-label');
 
-    // Add an event listener to the input element for the 'change' event
-    $inputElement.on('change', function () {
-      // Check if a file was selected
-      if ($inputElement[0].files.length > 0) {
-        // Get the selected file
-        const selectedFile = $inputElement[0].files[0];
-
-        // Create a FileReader to read the selected file
+      if (input.files && input.files[0]) {
         const reader = new FileReader();
 
-        // Define a function to execute when the FileReader has loaded the file
         reader.onload = function (e) {
-          // Set the 'src' attribute of the image element to the data URL of the selected file
-          $imageElement.attr('src', e.target.result);
-        };
+          img.src = e.target.result;
+        }
 
-        // Read the selected file as a data URL
-        reader.readAsDataURL(selectedFile);
+        reader.readAsDataURL(input.files[0]);
+
+        // Update label text with the selected file name
+        label.textContent = input.files[0].name;
+      } else {
+        // If no file is selected, reset label text
+        label.textContent = 'Choose file';
       }
-    });
-
-
-    $("#personal-info-edit").click(function () {
-      $("#personal-information input").attr("disabled", false);
-    })
-
-
-    $("#edit-password-btn").click(function () {
-      $("#edit-password-card input").attr("disabled", false);
-    })
+    }
   </script>
 </body>
 
