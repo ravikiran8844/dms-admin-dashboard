@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-
+    <link rel="stylesheet" href="assets/bundles/sumoselect/sumoselect.min.css">
 </head>
 
 <body>
@@ -348,11 +348,198 @@
 
                 <section class="section">
 
+
+
+
+                    
+
                     <div class="row">
                         <div class="col-12 mb-4">
                             <div class="h2 page-main-heading">Dashboard</div>
                             <div>Welcome to <span><b>EDMS</b></span> Silver </div>
                         </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                          <div class="d-flex flex-wrap justify-content-between align-items-center w-100">
+                              <div class="search_bar">
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                      <span class="bg-transparent border-0  input-group-text h-100" id="inputGroupPrepend2">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                              
+                                      </span>
+                                      </div>
+                                      <input type="text" class="form-control border-0  bg-transparent" placeholder="Search anything...">
+                                      <div class="input-group-prepend">
+                                          <span class="bg-transparent border-0  input-group-text h-100" id="inputGroupPrepend2">
+                                              <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M10.4167 5.83333C9.4088 5.83333 8.56808 6.54903 8.37502 7.49992L0.416667 7.5C0.186548 7.5 0 7.68655 0 7.91667C0 8.14678 0.186548 8.33333 0.416667 8.33333L8.37511 8.33383C8.56833 9.28452 9.40894 10 10.4167 10C11.4244 10 12.265 9.28452 12.4582 8.33383L14.5833 8.33333C14.8135 8.33333 15 8.14678 15 7.91667C15 7.68655 14.8135 7.5 14.5833 7.5L12.4583 7.49992C12.2653 6.54903 11.4245 5.83333 10.4167 5.83333ZM10.4167 6.66667C11.107 6.66667 11.6667 7.22631 11.6667 7.91667C11.6667 8.60702 11.107 9.16667 10.4167 9.16667C9.72631 9.16667 9.16667 8.60702 9.16667 7.91667C9.16667 7.22631 9.72631 6.66667 10.4167 6.66667ZM4.58333 0C3.57546 0 2.73475 0.715696 2.54169 1.66659L0.416667 1.66667C0.186548 1.66667 0 1.85321 0 2.08333C0 2.31345 0.186548 2.5 0.416667 2.5L2.54178 2.5005C2.735 3.45118 3.57561 4.16667 4.58333 4.16667C5.59106 4.16667 6.43167 3.45118 6.62489 2.5005L14.5833 2.5C14.8135 2.5 15 2.31345 15 2.08333C15 1.85321 14.8135 1.66667 14.5833 1.66667L6.62498 1.66659C6.43192 0.715696 5.5912 0 4.58333 0ZM4.58333 0.833333C5.27369 0.833333 5.83333 1.39298 5.83333 2.08333C5.83333 2.77369 5.27369 3.33333 4.58333 3.33333C3.89298 3.33333 3.33333 2.77369 3.33333 2.08333C3.33333 1.39298 3.89298 0.833333 4.58333 0.833333Z" fill="#212121"></path>
+                                                  </svg>
+                                                  
+                                              
+                                          </span>
+                                      </div>
+                                  </div>
+                              </div>
+                      
+                              <div class="d-flex flex-wrap align-items-center" style="gap: 10px;">
+                      
+                      
+                                <div class="d-flex align-items-center">
+                                  <!-- <span><i class="far fa-calendar-alt"></i> Date Range</span> -->
+                                  <input class="form-control custom-btn-border" type="text" placeholder="Date Range" name="datefilter" value="">
+                                </div>
+                      
+                                  
+                      
+                      
+                              
+                      
+                      
+                               <div>
+                                <select multiple name="" class="dealer-select-input">
+                                    <option value="">Dealer 1</option>
+                                    <option value="">Dealer 2</option>
+                                    <option value="">Dealer 3</option>
+                                    <option value="">Dealer 4</option>
+                                    <option value="">Dealer 5</option>
+                                    <option value="">Dealer 6</option>
+                                    <option value="">Dealer 7</option>
+                                    <option value="">Dealer 8</option>
+    
+                                   </select>
+                               </div>
+                      
+                      
+                               <div>
+                                <select multiple name="" class="zone-select-input">
+                                    <option value="">Zone 1</option>
+                                    <option value="">Zone 2</option>
+                                    <option value="">Zone 3</option>
+                                    <option value="">Zone 4</option>
+                                    <option value="">Zone 5</option>
+                                   </select>
+                               </div>
+                      
+                               
+                              </div>
+                          </div>
+                        </div>
+                      
+                      </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card dashboard-card-item">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+
+                                                        <div>
+                                                            <div class="h6">Total Orders</div>
+                                                            <h4 class="text-dark">200</h4>
+                                                        </div>
+
+                                                        <div class="card-icon_wrapper">
+                                                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="40.5133" height="40.5133" rx="11.5752"
+                                                                    fill="#EBE0FF"></rect>
+                                                                <path
+                                                                    d="M20.2565 19.4669C22.0577 19.4669 23.5178 18.0068 23.5178 16.2056C23.5178 14.4045 22.0577 12.9443 20.2565 12.9443C18.4554 12.9443 16.9952 14.4045 16.9952 16.2056C16.9952 18.0068 18.4554 19.4669 20.2565 19.4669Z"
+                                                                    fill="#8C6FC0"></path>
+                                                                <path
+                                                                    d="M28.0833 16.8575C29.8844 16.8575 31.3446 15.3974 31.3446 13.5962C31.3446 11.7951 29.8844 10.335 28.0833 10.335C26.2821 10.335 24.822 11.7951 24.822 13.5962C24.822 15.3974 26.2821 16.8575 28.0833 16.8575Z"
+                                                                    fill="#8C6FC0"></path>
+                                                                <path
+                                                                    d="M12.4292 16.8575C14.2304 16.8575 15.6905 15.3974 15.6905 13.5962C15.6905 11.7951 14.2304 10.335 12.4292 10.335C10.6281 10.335 9.16797 11.7951 9.16797 13.5962C9.16797 15.3974 10.6281 16.8575 12.4292 16.8575Z"
+                                                                    fill="#8C6FC0"></path>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M26.1267 25.3373V29.2508C26.1267 29.4236 26.0582 29.59 25.9356 29.7119C25.8136 29.8346 25.6473 29.9031 25.4744 29.9031H15.0384C14.8655 29.9031 14.6992 29.8346 14.5772 29.7119C14.4546 29.59 14.3861 29.4236 14.3861 29.2508V25.3373C14.3861 22.8157 16.4303 20.7715 18.9519 20.7715H21.5609C24.0825 20.7715 26.1267 22.8157 26.1267 25.3373Z"
+                                                                    fill="#8C6FC0"></path>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M27.4314 27.2937H33.3017C33.4746 27.2937 33.6409 27.2252 33.7629 27.1026C33.8855 26.9806 33.954 26.8143 33.954 26.6414V22.7279C33.954 20.2063 31.9098 18.1621 29.3882 18.1621H26.7792C25.4016 18.1621 24.1662 18.7726 23.3287 19.7373C25.7069 20.4874 27.4314 22.7109 27.4314 25.3369V27.2937Z"
+                                                                    fill="#8C6FC0"></path>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M17.1843 19.7373C16.3468 18.7726 15.1114 18.1621 13.7339 18.1621H11.1249C8.60325 18.1621 6.55908 20.2063 6.55908 22.7279V26.6414C6.55908 26.8143 6.62757 26.9806 6.75019 27.1026C6.87216 27.2252 7.03849 27.2937 7.21134 27.2937H13.0816V25.3369C13.0816 22.7109 14.8062 20.4874 17.1843 19.7373Z"
+                                                                    fill="#8C6FC0"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card dashboard-card-item">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+
+                                                        <div>
+                                                            <div class="h6">Total Order Volume</div>
+                                                            <h4 class="text-dark ">24,000</h4>
+                                                        </div>
+
+                                                        <div class="card-icon_wrapper">
+                                                            <svg width="41" height="41" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect x="0.549805" y="0.973145" width="48.0268" height="48.0268" rx="11.9923" fill="#FEF0E9"/>
+                                                                <path d="M20.0871 24.0501C22.2222 24.0501 23.9532 22.3192 23.9532 20.184C23.9532 18.0488 22.2222 16.3179 20.0871 16.3179C17.9519 16.3179 16.2209 18.0488 16.2209 20.184C16.2209 22.3192 17.9519 24.0501 20.0871 24.0501Z" fill="#F78D1E"/>
+                                                                <path d="M29.3657 20.9573C31.5009 20.9573 33.2318 19.2264 33.2318 17.0912C33.2318 14.956 31.5009 13.2251 29.3657 13.2251C27.2305 13.2251 25.4996 14.956 25.4996 17.0912C25.4996 19.2264 27.2305 20.9573 29.3657 20.9573Z" fill="#F78D1E"/>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0459 31.0087V35.6481C27.0459 35.853 26.9647 36.0501 26.8194 36.1947C26.6748 36.3401 26.4776 36.4213 26.2727 36.4213H13.9012C13.6962 36.4213 13.4991 36.3401 13.3545 36.1947C13.2091 36.0501 13.1279 35.853 13.1279 35.6481V31.0087C13.1279 28.0195 15.5512 25.5962 18.5405 25.5962H21.6334C24.6226 25.5962 27.0459 28.0195 27.0459 31.0087Z" fill="#F78D1E"/>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.5926 33.329H35.5516C35.7565 33.329 35.9536 33.2478 36.0982 33.1024C36.2436 32.9579 36.3248 32.7607 36.3248 32.5558V27.9165C36.3248 24.9272 33.9015 22.5039 30.9122 22.5039H27.8194C26.1863 22.5039 24.7218 23.2276 23.729 24.3712C26.5482 25.2604 28.5926 27.8963 28.5926 31.0093V33.329Z" fill="#F78D1E"/>
+                                                                </svg>
+                                                                
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card dashboard-card-item">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+
+                                                        <div>
+                                                            <div class="h6">Total Project</div>
+                                                            <h4 class="text-dark">1</h4>
+                                                        </div>
+
+                                                        <div class="card-icon_wrapper">
+                                                            <svg width="41" height="41" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect x="0.9823" y="0.973145" width="48.0268" height="48.0268" rx="11.9923" fill="#E8FAF5"/>
+                                                                <path d="M15.972 20.7259C16.0149 21.3173 17.6672 25.8708 20.7537 25.8708C23.8402 25.8708 25.4139 20.6404 25.4139 20.6404C25.4139 20.6404 26.5619 19.543 26.4332 18.4028C26.3044 17.2626 25.7107 17.6439 25.7107 17.6439C25.7107 17.6439 26.1757 15.6629 25.7107 13.721C25.2458 11.7792 22.238 9.84095 19.9097 10.6426C17.5814 11.4443 17.7924 12.3315 17.7924 12.3315C17.7924 12.3315 16.2688 11.6973 15.5893 13.6391C14.9134 15.5809 15.5893 17.6474 15.5893 17.6474C13.937 18.4064 15.9326 20.6795 15.9326 20.6795C15.9326 20.6795 15.9291 20.1344 15.972 20.7259Z" fill="#18CE98"/>
+                                                                <path d="M25.6179 30.7412C25.6179 29.2056 26.022 27.7625 26.723 26.5084L24.781 25.7423C24.781 25.7423 23.3647 27.3065 20.6931 27.221C18.0214 27.1355 16.9914 25.5107 16.9914 25.5107L11.7733 27.4633C9.64531 28.2578 8.07524 30.0892 7.62102 32.3089L6.96295 35.5405C6.63392 37.1474 7.8678 38.6546 9.51656 38.6546H30.7573C27.728 37.2971 25.6179 34.265 25.6179 30.7412Z" fill="#18CE98"/>
+                                                                <path d="M34.3265 23.4941C30.3065 23.4941 27.0484 26.74 27.0484 30.7448C27.0484 34.7496 30.3065 37.9955 34.3265 37.9955C38.3465 37.9955 41.6011 34.746 41.6011 30.7412C41.6011 26.7365 38.3429 23.4941 34.3265 23.4941ZM39.0224 28.297L33.132 34.6605L29.5161 31.6284C29.2586 31.4147 29.2264 31.0334 29.441 30.7769C29.6556 30.5203 30.0383 30.4883 30.2958 30.7021L33.0247 32.9895L38.1319 27.4776C38.3572 27.2317 38.7435 27.2175 38.9902 27.4419C39.2334 27.67 39.2477 28.0512 39.0224 28.297Z" fill="#18CE98"/>
+                                                                </svg>
+                                                                
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
 
@@ -363,16 +550,17 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex flex-wrap align-items-center mb-4" style="gap:5px;">
-                                        <div class="h5">Total Orders:</div> <div class="text-dark h4 fw-bold">688,000</div> <div class="h6">last 30 days order 563000gm</div>
+                                        <div class="h5">Total Orders:</div>
+                                        <div class="text-dark h4 fw-bold">688,000</div>
+                                        <div class="h6">last 30 days order 563000gm</div>
                                     </div>
 
                                     <div class="chart">
-                                        <canvas id="Chart1"
-                                            style="width: 100%; height: 400px;"></canvas>
+                                        <canvas id="Chart1" style="width: 100%; height: 400px;"></canvas>
                                     </div>
-    
+
                                 </div>
-    
+
                             </div>
                         </div>
                     </div>
@@ -381,137 +569,183 @@
 
 
                     <div class="row mt-5">
-                        
-                        
+
+
                         <div class="col-12">
-                          <div class="card">
-                            <div class="card-body">
+                            <div class="card">
+                                <div class="card-body">
 
 
-                                <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
-                                    <div class="h5 page-main-heading">Best Selling Products</div>
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+                                        <div class="h5 page-main-heading">Best Selling Products</div>
 
-                                    <div>
-                                        <div>
-                                            text
+                                        <div class="d-flex align-items-center" style="gap: 10px;">
+                                            <div>
+                                                <select multiple name="" class="dealer-select-input">
+                                                    <option value="">Dealer 1</option>
+                                                    <option value="">Dealer 2</option>
+                                                    <option value="">Dealer 3</option>
+                                                    <option value="">Dealer 4</option>
+                                                    <option value="">Dealer 5</option>
+                                                    <option value="">Dealer 6</option>
+                                                    <option value="">Dealer 7</option>
+                                                    <option value="">Dealer 8</option>
+                    
+                                                   </select>
+                                               </div>
+
+                                               <div>
+                                                <select multiple name="" class="project-select-input">
+                                                    <option value="">Project 1</option>
+                                                    <option value="">Project 2</option>
+                                                    <option value="">Project 3</option>
+                                                    <option value="">Project 4</option>
+                                                    <option value="">Project 5</option>
+                                                   </select>
+                                               </div>
+                                      
+                                      
+                                               <div>
+                                                <select multiple name="" class="zone-select-input">
+                                                    <option value="">Zone 1</option>
+                                                    <option value="">Zone 2</option>
+                                                    <option value="">Zone 3</option>
+                                                    <option value="">Zone 4</option>
+                                                    <option value="">Zone 5</option>
+                                                   </select>
+                                               </div>
                                         </div>
                                     </div>
+
+
+                                    <div class="table-responsive">
+                                        <table class="table table-striped" id="table-2">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Image</th>
+                                                    <th>Project</th>
+                                                    <th>Product SKU</th>
+                                                    <th>Product Name</th>
+                                                    <th>Total Weight</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <div class="table-img-wrapper">
+                                                            <a href="assets/img/image-gallery/1.png"
+                                                                data-lightbox="image-1" data-title="Product Image"><img
+                                                                    width="50" height="50"
+                                                                    src="assets/img/image-gallery/1.png" alt="img"></a>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>EF Idol</td>
+                                                    <td>DCRB2343</td>
+                                                    <td>Ganesh statue</td>
+                                                    <td>448.81</td>
+
+
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>
+                                                        <div class="table-img-wrapper">
+                                                            <a href="assets/img/image-gallery/1.png"
+                                                                data-lightbox="image-2" data-title="Product Image"><img
+                                                                    width="50" height="50"
+                                                                    src="assets/img/image-gallery/1.png" alt="img"></a>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>EF Idol</td>
+                                                    <td>DCRB2343</td>
+                                                    <td>Ganesh statue</td>
+                                                    <td>448.81</td>
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <div class="table-img-wrapper">
+                                                            <a href="assets/img/image-gallery/1.png"
+                                                                data-lightbox="image-3" data-title="Product Image"><img
+                                                                    width="50" height="50"
+                                                                    src="assets/img/image-gallery/1.png" alt="img"></a>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>EF Idol</td>
+                                                    <td>DCRB2343</td>
+                                                    <td>Ganesh statue</td>
+                                                    <td>448.81</td>
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>
+                                                        <div class="table-img-wrapper">
+                                                            <a href="assets/img/image-gallery/1.png"
+                                                                data-lightbox="image-4" data-title="Product Image"><img
+                                                                    width="50" height="50"
+                                                                    src="assets/img/image-gallery/1.png" alt="img"></a>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>EF Idol</td>
+                                                    <td>DCRB2343</td>
+                                                    <td>Ganesh statue</td>
+                                                    <td>448.81</td>
+
+
+
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>
+                                                        <div class="table-img-wrapper">
+                                                            <a href="assets/img/image-gallery/1.png"
+                                                                data-lightbox="image-5" data-title="Product Image"><img
+                                                                    width="50" height="50"
+                                                                    src="assets/img/image-gallery/1.png" alt="img"></a>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>EF Idol</td>
+                                                    <td>DCRB2343</td>
+                                                    <td>Ganesh statue</td>
+                                                    <td>448.81</td>
+
+
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-
-
-                              <div class="table-responsive">
-                                <table class="table table-striped" id="table-2">
-                                  <thead>
-                                    <tr>
-                                     <th>S.No</th>
-                                     <th>Image</th>
-                                      <th>Project</th>
-                                      <th>Product SKU</th>
-                                      <th>Product Name</th>
-                                      <th>Total Weight</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    
-                                    <tr>
-                                      <td>1</td>
-                                      <td>
-                                        <div class="table-img-wrapper">
-                                          <a href="assets/img/image-gallery/1.png" data-lightbox="image-1" data-title="Product Image"><img width="50" height="50" src="assets/img/image-gallery/1.png" alt="img"></a>
-                                        </div>
-                                      </td>
-                                    
-                                      <td>EF Idol</td>
-                                      <td>DCRB2343</td>
-                                      <td>Ganesh statue</td>
-                                      <td>448.81</td>
-
-        
-                                      
-                                    </tr>
-        
-                                    <tr>
-                                        <td>2</td>
-                                        <td>
-                                          <div class="table-img-wrapper">
-                                            <a href="assets/img/image-gallery/1.png" data-lightbox="image-2" data-title="Product Image"><img width="50" height="50" src="assets/img/image-gallery/1.png" alt="img"></a>
-                                          </div>
-                                        </td>
-                                      
-                                        <td>EF Idol</td>
-                                        <td>DCRB2343</td>
-                                        <td>Ganesh statue</td>
-                                        <td>448.81</td>
-  
-          
-                                        
-                                      </tr>
-
-
-                                      <tr>
-                                        <td>3</td>
-                                        <td>
-                                          <div class="table-img-wrapper">
-                                            <a href="assets/img/image-gallery/1.png" data-lightbox="image-3" data-title="Product Image"><img width="50" height="50" src="assets/img/image-gallery/1.png" alt="img"></a>
-                                          </div>
-                                        </td>
-                                      
-                                        <td>EF Idol</td>
-                                        <td>DCRB2343</td>
-                                        <td>Ganesh statue</td>
-                                        <td>448.81</td>
-  
-          
-                                        
-                                      </tr>
-
-
-                                      <tr>
-                                        <td>4</td>
-                                        <td>
-                                          <div class="table-img-wrapper">
-                                            <a href="assets/img/image-gallery/1.png" data-lightbox="image-4" data-title="Product Image"><img width="50" height="50" src="assets/img/image-gallery/1.png" alt="img"></a>
-                                          </div>
-                                        </td>
-                                      
-                                        <td>EF Idol</td>
-                                        <td>DCRB2343</td>
-                                        <td>Ganesh statue</td>
-                                        <td>448.81</td>
-  
-          
-                                        
-                                      </tr>
-
-
-                                      <tr>
-                                        <td>5</td>
-                                        <td>
-                                          <div class="table-img-wrapper">
-                                            <a href="assets/img/image-gallery/1.png" data-lightbox="image-5" data-title="Product Image"><img width="50" height="50" src="assets/img/image-gallery/1.png" alt="img"></a>
-                                          </div>
-                                        </td>
-                                      
-                                        <td>EF Idol</td>
-                                        <td>DCRB2343</td>
-                                        <td>Ganesh statue</td>
-                                        <td>448.81</td>
-  
-          
-                                        
-                                      </tr>
-                                  </tbody>
-                                </table>
-                              </div>
                             </div>
-                          </div>
                         </div>
                     </div>
 
 
 
 
-                 
+
 
 
                 </section>
@@ -534,7 +768,7 @@
     <!-- General JS Scripts -->
     <script src="assets/js/app.min.js"></script>
     <!-- JS Libraies -->
-  
+
     <script src="assets/bundles/datatables/datatables.min.js"></script>
     <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
     <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
@@ -549,9 +783,9 @@
     <script src="assets/js/custom.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/bundles/sumoselect/jquery.sumoselect.min.js"></script>
 
     <script type="text/javascript">
         $(function () {
@@ -607,61 +841,64 @@
     </script>
 
 
-
 <script>
+    $('.zone-select-input').SumoSelect({placeholder: 'Zone'});
 
+    $('.dealer-select-input').SumoSelect({placeholder: 'Dealer Name'});
 
-
-
-    const ctx2 = document.getElementById('Chart1').getContext('2d');
-
-
-
-    const labels = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    const data = {
-        labels: labels,
-        datasets: [
-            {
-            label: 'Volume',
-            data: [80,100,130,60,90,40,150,40,60,30,160,70],
-            backgroundColor: "#7BD3EA",
-            },
-        ]
-
-    };
-
-    const config = {
-        type: 'bar',
-        data: data,
-        options: {
-            plugins: {
-                title: {
-                    display: false,
-                    text: 'Total Orders'
-                },
-                legend: {
-                    display: false,
-                },
-            },
-            responsive: true,
-            scales: {
-                x: {
-                    stacked: true,
-                },
-                y: {
-                    stacked: true
-                }
-            }
-        }
-    };
-    const chart = new Chart(ctx2, config);
-
-
-
-
-
+    $('.project-select-input').SumoSelect({placeholder: 'Project Name'});
 
 </script>
+
+
+    <script>
+        const ctx2 = document.getElementById('Chart1').getContext('2d');
+
+        const labels = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        const data = {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Volume',
+                    data: [80, 100, 130, 60, 90, 40, 150, 40, 60, 30, 160, 70],
+                    backgroundColor: "#7BD3EA",
+                },
+            ]
+
+        };
+
+        const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                plugins: {
+                    title: {
+                        display: false,
+                        text: 'Total Orders'
+                    },
+                    legend: {
+                        display: false,
+                    },
+                },
+                responsive: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true
+                    }
+                }
+            }
+        };
+        const chart = new Chart(ctx2, config);
+
+
+
+
+
+
+    </script>
 
 
 

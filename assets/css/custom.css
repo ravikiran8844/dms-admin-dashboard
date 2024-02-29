@@ -1319,14 +1319,39 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu>li.active>a {
 .fw-bold{
     font-weight: 700;
 }
+.dashboard-card-item{
+    border: 1.04px solid #E1E1E1;
+    background: #FAFAFA;
+    box-shadow: none;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
 
 
 
 
+.search_bar input{
+    border: none !important;
+    padding-left: 0px !important;
+}
 
+.ranges li {
+    color: #000;
+}
+.SumoSelect>.CaptionCont>span.placeholder {
+    color: #000 !important;
+    font-style: normal !important;
+}
+.SumoSelect>.CaptionCont{
+    border: 1px solid #929292 !important;
+    background: #F5F6F6 !important;
+    border-radius: 9px !important;
+}
 
+.SumoSelect>.optWrapper>.options li label {
+margin-bottom: 0px;
+}
 
-
-
-
-
+p label{
+    margin-bottom: 0px;
+}
