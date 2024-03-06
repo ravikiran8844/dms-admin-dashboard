@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Getting Started with Chart JS with www.chartjs3.com</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="chartCard">
+      <div class="chartBox">
+        <canvas id="myChart"></canvas>
+
+        <button onclick="dateFilter('hour')">hour</button>
+        <button onclick="dateFilter('day')">day</button>
+        <button onclick="dateFilter('month')">month</button>
+        <button onclick="dateFilter('year')">year</button>
+
+    </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+    <script>
+    // Function to generate dummy data based on time unit
+    function generateDummyData(timeUnit) {
+        let data = [];
+        switch (timeUnit) {
+            case 'hour':
+                for (let i = 0; i < 24; i++) {
+                    data.push({
+                        x: `2024-03-07T${i < 10 ? '0' + i : i}:00:00`,
+                        y: Math.floor(Math.random() * 100)
+                    });
+                }
+                break;
+            case 'day':
+                for (let i = 1; i <= 31; i++) {
+                    data.push({
+                        x: `2024-03-${i < 10 ? '0' + i : i}`,
+                        y: Math.floor(Math.random() * 100)
+                    });
+                }
+                break;
+            case 'month':
+                const daysInMonth = new Date(2024, 2, 0).getDate(); // Get number of days in March 2024
+                for (let i = 1; i <= daysInMonth; i++) {
+                    data.push({
+                        x: `2024-03-${i < 10 ? '0' + i : i}`,
+                        y: Math.floor(Math.random() * 100)
+                    });
+                }
+                break;
+            case 'year':
+                for (let i = 0; i < 12; i++) {
+                    data.push({
+                        x: `2024-${i < 9 ? '0' + (i + 1) : i + 1}-01`,
+                        y: Math.floor(Math.random() * 100)
+                    });
+                }
+                break;
+        }
+        return data;
+    }
+
+    // setup 
+    let data = {
+      datasets: [{
+        label: 'Sales',
+        data: [], // Initialize empty array for data
+        backgroundColor: "#7BD3EA",
+      }]
+    };
+
+    // config 
+    const config = {
+      type: 'bar',
+      data,
+      options: {
+        legend: {
+			position: "bottom"
+		},
+        responsive: true,
+        scales: {
+            x: {
+                type: 'time',
+                time: {
+                    unit: 'month',
+                    
+                }
+            },
+            y: {
+                beginAtZero: true
+            }
+        }
+      }
+    };
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+    // Function to change time unit on button click
+    function dateFilter(time) {
+      myChart.config.options.scales.x.time.unit = time;
+      myChart.data.datasets[0].data = generateDummyData(time);
+      myChart.update();
+    }
+
+     dateFilter("month")
+    </script>
+
+  </body>
+</html>
