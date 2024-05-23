@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "order_id": "999-5878",
+      "name": "Prathip",
+      "date_time": "May 6th, 2024 12:00:25 pm",
+      "mobile": "78450 37462",
+      "total_weight": "5555",
+      "total_quantity": "50",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/1.png",
+          "sku": "CSBELL0001-14-SE",
+          "box": "NX",
+          "total_quantity": "55",
+          "total_weight": "15169",
+          "available_quantity": "137"
+        },
+        {
+          "image": "/assets/img/image-gallery/2.png",
+          "sku": "CSBELL0001-15-SE",
+          "box": "BX",
+          "total_quantity": "35",
+          "total_weight": "1269",
+          "available_quantity": "17"
+        }
+      ]
+    },
+    {
+      "order_id": "999-5879",
+      "name": "Anita",
+      "date_time": "May 6th, 2024 12:10:30 pm",
+      "mobile": "78450 37463",
+      "total_weight": "6720",
+      "total_quantity": "60",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/3.png",
+          "sku": "CSBELL0002-14-SE",
+          "box": "MX",
+          "total_quantity": "45",
+          "total_weight": "13000",
+          "available_quantity": "110"
+        },
+        {
+          "image": "/assets/img/image-gallery/4.png",
+          "sku": "CSBELL0002-15-SE",
+          "box": "CX",
+          "total_quantity": "40",
+          "total_weight": "2000",
+          "available_quantity": "25"
+        }
+      ]
+    },
+    {
+      "order_id": "999-5880",
+      "name": "Rahul",
+      "date_time": "May 6th, 2024 12:20:35 pm",
+      "mobile": "78450 37464",
+      "total_weight": "7800",
+      "total_quantity": "70",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/5.png",
+          "sku": "CSBELL0003-14-SE",
+          "box": "LX",
+          "total_quantity": "60",
+          "total_weight": "16000",
+          "available_quantity": "125"
+        },
+        {
+          "image": "/assets/img/image-gallery/6.png",
+          "sku": "CSBELL0003-15-SE",
+          "box": "DX",
+          "total_quantity": "50",
+          "total_weight": "3000",
+          "available_quantity": "35"
+        }
+      ]
+    },
+    {
+      "order_id": "999-5881",
+      "name": "Vikram",
+      "date_time": "May 6th, 2024 12:30:40 pm",
+      "mobile": "78450 37465",
+      "total_weight": "8900",
+      "total_quantity": "80",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/7.png",
+          "sku": "CSBELL0004-14-SE",
+          "box": "PX",
+          "total_quantity": "75",
+          "total_weight": "17000",
+          "available_quantity": "140"
+        },
+        {
+          "image": "/assets/img/image-gallery/8.png",
+          "sku": "CSBELL0004-15-SE",
+          "box": "FX",
+          "total_quantity": "65",
+          "total_weight": "4000",
+          "available_quantity": "45"
+        }
+      ]
+    },
+    {
+      "order_id": "999-5882",
+      "name": "Sangeeta",
+      "date_time": "May 6th, 2024 12:40:45 pm",
+      "mobile": "78450 37466",
+      "total_weight": "9900",
+      "total_quantity": "90",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/9.png",
+          "sku": "CSBELL0005-14-SE",
+          "box": "QX",
+          "total_quantity": "85",
+          "total_weight": "18000",
+          "available_quantity": "155"
+        },
+        {
+          "image": "/assets/img/image-gallery/10.png",
+          "sku": "CSBELL0005-15-SE",
+          "box": "GX",
+          "total_quantity": "70",
+          "total_weight": "5000",
+          "available_quantity": "55"
+        }
+      ]
+    },
+    {
+      "order_id": "999-5883",
+      "name": "Ramesh",
+      "date_time": "May 6th, 2024 12:50:50 pm",
+      "mobile": "78450 37467",
+      "total_weight": "11000",
+      "total_quantity": "100",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/11.png",
+          "sku": "CSBELL0006-14-SE",
+          "box": "RX",
+          "total_quantity": "95",
+          "total_weight": "19000",
+          "available_quantity": "170"
+        },
+        {
+          "image": "/assets/img/image-gallery/12.png",
+          "sku": "CSBELL0006-15-SE",
+          "box": "HX",
+          "total_quantity": "75",
+          "total_weight": "6000",
+          "available_quantity": "65"
+        }
+      ]
+    },
+    {
+      "order_id": "999-5884",
+      "name": "Kiran",
+      "date_time": "May 6th, 2024 01:00:55 pm",
+      "mobile": "78450 37468",
+      "total_weight": "12100",
+      "total_quantity": "110",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/13.png",
+          "sku": "CSBELL0007-14-SE",
+          "box": "SX",
+          "total_quantity": "105",
+          "total_weight": "20000",
+          "available_quantity": "185"
+        },
+        {
+          "image": "/assets/img/image-gallery/14.png",
+          "sku": "CSBELL0007-15-SE",
+          "box": "IX",
+          "total_quantity": "80",
+          "total_weight": "7000",
+          "available_quantity": "75"
+        }
+      ]
+    },
+    {
+      "order_id": "999-5885",
+      "name": "Divya",
+      "date_time": "May 6th, 2024 01:10:00 pm",
+      "mobile": "78450 37469",
+      "total_weight": "13200",
+      "total_quantity": "120",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/15.png",
+          "sku": "CSBELL0008-14-SE",
+          "box": "TX",
+          "total_quantity": "115",
+          "total_weight": "21000",
+          "available_quantity": "200"
+        },
+        {
+          "image": "/assets/img/image-gallery/16.png",
+          "sku": "CSBELL0008-15-SE",
+          "box": "JX",
+          "total_quantity": "85",
+          "total_weight": "8000",
+          "available_quantity": "85"
+        }
+      ]
+    },
+    {
+      "order_id": "999-5886",
+      "name": "Anil",
+      "date_time": "May 6th, 2024 01:20:05 pm",
+      "mobile": "78450 37470",
+      "total_weight": "14300",
+      "total_quantity": "130",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/17.png",
+          "sku": "CSBELL0009-14-SE",
+          "box": "UX",
+          "total_quantity": "125",
+          "total_weight": "22000",
+          "available_quantity": "215"
+        },
+        {
+          "image": "/assets/img/image-gallery/18.png",
+          "sku": "CSBELL0009-15-SE",
+          "box": "KX",
+          "total_quantity": "90",
+          "total_weight": "9000",
+          "available_quantity": "95"
+        }
+      ]
+    },
+    {
+      "order_id": "999-5887",
+      "name": "Sunita",
+      "date_time": "May 6th, 2024 01:30:10 pm",
+      "mobile": "78450 37471",
+      "total_weight": "15400",
+      "total_quantity": "140",
+      "products": [
+        {
+          "image": "/assets/img/image-gallery/19.png",
+          "sku": "CSBELL0010-14-SE",
+          "box": "VX",
+          "total_quantity": "135",
+          "total_weight": "23000",
+          "available_quantity": "230"
+        },
+        {
+          "image": "/assets/img/image-gallery/20.png",
+          "sku": "CSBELL0010-15-SE",
+          "box": "LX",
+          "total_quantity": "95",
+          "total_weight": "10000",
+          "available_quantity": "105"
+        }
+      ]
+    }
+  ]
+}
