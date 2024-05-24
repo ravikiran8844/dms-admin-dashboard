@@ -470,6 +470,31 @@ table input[type='checkbox']{
   <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
 
   <script>
+
+    const dealers=[{
+    "id": 3,
+    "name": "Sundar"
+      },
+      {
+          "id": 41,
+          "name": "A.K.BROTHERS"
+      },
+      {
+          "id": 42,
+          "name": "AGAU JEWELS - Silver"
+      },
+      {
+          "id": 44,
+          "name": "ALKA JEWELLERS - SILVER"
+      }]
+
+
+  // Function to create dealer options
+  function createDealerOptions() {
+    return dealers.map(dealer => `<option value="${dealer.id}">${dealer.name}</option>`).join('');
+  }
+
+
     // Formatting function for row details - modify as you need
     function format(d) {
       let productsHtml = d.products.map(product => {
@@ -515,9 +540,7 @@ table input[type='checkbox']{
                   <label for="" class="mb-4 mr-2 flex-grow-1" style="min-width: fit-content;font-weight: 700;color: #000;">Select Dealer</label>
                   <select class="form-control mb-4" name="" id="">
                     <option value="">Select Dealer</option>
-                    <option value="1">Dealer 1</option>
-                    <option value="2">Dealer 2</option>
-                    <option value="3">Dealer 3</option>
+                    ${createDealerOptions()}
                   </select>
                 </div>
                 <div>
