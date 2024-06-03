@@ -756,16 +756,9 @@
                                 <label class="fw-bold mr-2">Select All</label>
                               </div>
                               <div>
-                                <input type="checkbox" class="form-check">
+                                <input type="checkbox" class="form-check select-all">
                               </div>
                               </div>
-
-
-                       
-                     
-                      
-
-                              
                               </th>
                         </tr>
                     </thead>
@@ -892,5 +885,47 @@
         });
       });
     </script>
+
+
+<script>
+  $(document).ready(function () {
+    // This function waits for the document to be fully loaded before executing the code inside.
+    const observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        // Check if any nodes are added
+        if (
+          mutation.type === "childList" &&
+          mutation.addedNodes.length > 0
+        ) {
+          const selectAllCheckboxes = document.querySelectorAll('th input[type="checkbox"]');
+console.log(selectAllCheckboxes)
+            selectAllCheckboxes.forEach(function(selectAllCheckbox) {
+                // Add event listener to each "select all" checkbox
+                selectAllCheckbox.addEventListener('change', function() {
+                    // Find the parent table of the clicked "select all" checkbox
+                    const table = this.closest('table');
+
+                    // Get all checkboxes in the table body
+                    const bodyCheckboxes = table.querySelectorAll('tbody input[type="checkbox"]');
+
+                    // Check or uncheck all checkboxes in the table body based on the "select all" checkbox
+                    bodyCheckboxes.forEach(function(checkbox) {
+                        checkbox.checked = selectAllCheckbox.checked;
+                    });
+                });
+            });
+        }
+      });
+    });
+
+    // Start observing changes to the document
+    observer.observe(document.body, {
+      childList: true, // Observe changes to the child nodes
+      subtree: true, // Observe changes within the entire subtree of the body
+    });
+  });
+</script>
+
+
   </body>
 </html>
